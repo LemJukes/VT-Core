@@ -50,13 +50,23 @@ function getTimeInWords() {
         minuteWord = specialMinutes[minute];
     }
 
-    if (minute <= 30) {
+    if (minute === 1) {
+        return `IT IS ONE MINUTE PAST ${hourWord}`;
+    } else if (minute <= 30) {
         return `IT IS ${minuteWord} MINUTES PAST ${hourWord}`;
     } else {
         const nextHourWord = hours[(hour + 1) % 24];
         const remainingMinutes = 60 - minute;
         minuteWord = minutes[remainingMinutes];
-        return `IT IS ${minuteWord} MINUTES TO ${nextHourWord}`;
+        if (remainingMinutes === 10) {
+            return `IT IS TEN TILL ${nextHourWord}`;
+        } else if (remainingMinutes === 5) {
+            return `IT IS FIVE TILL ${nextHourWord}`;
+        } else if (remainingMinutes === 1) {
+            return `IT IS ONE MINUTE TO ${nextHourWord}`;
+        } else {
+            return `IT IS ${minuteWord} MINUTES TO ${nextHourWord}`;
+        }
     }
 }
 
