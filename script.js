@@ -20,7 +20,7 @@ function updateTime() {
         'ISO Format ' + now.toISOString(), // ISO format
         'Local Date & Time: ' + now.toLocaleString(), // Local date and time
         `Seconds since Unix epoch: ${secondsSinceEpoch}`, // Seconds since Unix epoch
-        `${timeInWords}` // Time in words
+        'My verbose time in words format: ' + `${timeInWords}` // Time in words
     ];
 
     document.getElementById('time').innerHTML = timeFormats.map(format => `<p>${format}</p>`).join('');
