@@ -1,6 +1,10 @@
 
-- `.gitattributes`: Configuration for Git attributes.
-- `.vscode/settings.json`: Settings for Visual Studio Code, including the port for Live Server.
+# Verbatempus - A Clock Libary Full of Words
+
+I wanted a way to translate a given time into words after discovering an app I used to use a lot is no longer available or maintaned anywhere, so I made one.
+
+## Files
+
 - `index.html`: The main HTML file that displays the current time.
 - `phrasing-guide.txt`: A guide for phrasing the time in words.
 - `README.md`: This file.
