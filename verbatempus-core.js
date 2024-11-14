@@ -46,27 +46,28 @@ function getTimeInWords() {
         return `IT IS ${hourWord} O'CLOCK ${timePeriod}`.trim();
     }
 
+    if (minute === 0) {
+        if (hour >= 1 && hour <= 11) {
+            timePeriod = timeOfDay.morning;
+        } else if (hour >= 13 && hour <= 16) {
+            timePeriod = timeOfDay.afternoon;
+        } else if (hour >= 17 && hour <= 23) {
+            timePeriod = timeOfDay.evening;
+        }
+        return `IT IS ${hourWord} O'CLOCK ${timePeriod}`.trim();
+    }
+
     if (minute in specialMinutes) {
         minuteWord = specialMinutes[minute];
     }
 
-    if (minute === 1) {
-        return `IT IS ONE MINUTE PAST ${hourWord}`;
-    } else if (minute <= 30) {
+    if (minute <= 30) {
         return `IT IS ${minuteWord} MINUTES PAST ${hourWord}`;
     } else {
         const nextHourWord = hours[(hour + 1) % 24];
         const remainingMinutes = 60 - minute;
         minuteWord = minutes[remainingMinutes];
-        if (remainingMinutes === 10) {
-            return `IT IS TEN TILL ${nextHourWord}`;
-        } else if (remainingMinutes === 5) {
-            return `IT IS FIVE TILL ${nextHourWord}`;
-        } else if (remainingMinutes === 1) {
-            return `IT IS ONE MINUTE TO ${nextHourWord}`;
-        } else {
-            return `IT IS ${minuteWord} MINUTES TO ${nextHourWord}`;
-        }
+        return `IT IS ${minuteWord} MINUTES TO ${nextHourWord}`;
     }
 }
 

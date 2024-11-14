@@ -15,10 +15,10 @@ function updateTime() {
 
     // Constructs an array of different time formats
     const timeFormats = [
-        now.toLocaleTimeString(), // Local time
-        now.toUTCString(), // UTC time
-        now.toISOString(), // ISO format
-        now.toLocaleString(), // Local date and time
+        'Local Time ' + now.toLocaleTimeString(), // Local time
+        'UTC Time ' + now.toUTCString(), // UTC time
+        'ISO Format ' + now.toISOString(), // ISO format
+        'Local Date & Time: ' + now.toLocaleString(), // Local date and time
         `Seconds since Unix epoch: ${secondsSinceEpoch}`, // Seconds since Unix epoch
         `${timeInWords}` // Time in words
     ];
