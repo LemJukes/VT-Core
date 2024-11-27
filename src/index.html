@@ -3,13 +3,13 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <h1 id="verbatempus"></h1>
+        <h1 id="verbatempusDisplay"></h1>
     </body>
 
     <script type="module">
-        import { getVerbatempus } from './verbatempus.js';
+        import { getVerbatempus } from './lib/verbatempus.js';
 
         const verbatempus = getVerbatempus();
-        document.getElementById('verbatempus').textContent = verbatempus;
+        document.getElementById('verbatempusDisplay').textContent = verbatempus;
     </script>
 </html>
