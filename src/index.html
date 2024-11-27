@@ -2,18 +2,14 @@
 
 <!DOCTYPE html>
 <html>
-<body>
+    <body>
+        <h1 id="verbatempus"></h1>
+    </body>
 
-<h2>JavaScript ISO Dates</h2>
-<p>Separate date and time with a capital T.</p>
-<p>Indicate UTC time with a capital Z.</p>
+    <script type="module">
+        import { getVerbatempus } from './verbatempus.js';
 
-<p id="demo"></p>
-
-<script>
-const d = new Date("2024-10-24T09:24-05:00");
-document.getElementById("demo").innerHTML = d;
-</script>
-
-</body>
+        const verbatempus = getVerbatempus();
+        document.getElementById('verbatempus').textContent = verbatempus;
+    </script>
 </html>
