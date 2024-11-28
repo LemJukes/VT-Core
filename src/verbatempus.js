@@ -1,6 +1,4 @@
-// lib/verbatempus.js
-
-// lib/verbatempus.js
+// src/verbatempus.js
 
 const HOURS_TO_WORDS = {
   0: 'midnight',
@@ -67,7 +65,20 @@ function verboseTime(date = new Date()) {
     if (nextHour === 0) return `It is ${MINUTES_TO_WORDS[minutes]} to midnight`;
     if (nextHour === 12) return `It is ${MINUTES_TO_WORDS[minutes]} to noon`;
     
+    if (minutes === 45) {
+      return `It is quarter to ${HOURS_TO_WORDS[nextDisplayHour]} oclock ${getTimeOfDay(nextHour)}`;
+    }
+    
     return `It is ${MINUTES_TO_WORDS[minutes]} minutes to ${HOURS_TO_WORDS[nextDisplayHour]} oclock ${getTimeOfDay(nextHour)}`;
+  }
+  
+  // Handle regular minutes past the hour
+  if (minutes === 15) {
+    return `It is quarter past ${HOURS_TO_WORDS[displayHour]} oclock ${getTimeOfDay(hours)}`;
+  }
+  
+  if (minutes === 30) {
+    return `It is half past ${HOURS_TO_WORDS[displayHour]} oclock ${getTimeOfDay(hours)}`;
   }
   
   // Handle regular minutes past the hour
