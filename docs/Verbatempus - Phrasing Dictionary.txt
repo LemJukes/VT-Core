@@ -27,7 +27,8 @@ Phrasing Format Templates:
     Terse:
         terse(date&time) = It is Thursday at almost half past ten.
         terse(date) = It is Thursday
-        terse(time) = It is half past ten.
+        terse(time) = its half past ten.
+
 
 
 Time & Date Related Numbers to Words Definitions:

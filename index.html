@@ -4,22 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verbose Date and Time</title>
+    <title>Verbatempus - A Clock full of Words</title>
 </head>
 <body>
-    <h3 id="verboseDisplay"></h3>
-    <h3 id="legnthyDisplay"></h3>
+    <h4 id="verboseDisplay"></h4>
+    <h4 id="legnthyDisplay"></h4>
+    <h4 id="shortDisplay"></h4>
+    <h4 id="terseDisplay"></h4>
 
     <script type="module">
         import { getVerboseDate } from './src/verbatempus.js';
         import { getVerboseTime } from './src/verbatempus.js';
         import { getLengthyDate } from './src/verbatempus.js';
+        import { getLengthyTime } from './src/verbatempus.js';
+        import { getShortDate } from './src/verbatempus.js';
+        import { getShortTime } from './src/verbatempus.js';
+        import { getTerseDate } from './src/verbatempus.js';
 
         const verboseDate = getVerboseDate();
         const verboseTime = getVerboseTime();
         const lengthyDate = getLengthyDate();
+        const lenghtyTime = getLengthyTime();
+        const shortDate = getShortDate();
+        const shortTime = getShortTime();
+        const terseDate = getTerseDate();
         document.getElementById('verboseDisplay').textContent = 'Current Date and Time(verbose): ' + verboseDate + ' and ' + verboseTime;
-        document.getElementById('legnthyDisplay').textContent = 'Current Date and Time(lengthy): ' + lengthyDate + ' and ' + verboseTime;
+        document.getElementById('legnthyDisplay').textContent = 'Current Date and Time(lengthy): ' + lengthyDate + ' and ' + lenghtyTime;
+        document.getElementById('shortDisplay').textContent = 'Current Date and Time(short): ' + shortDate + ' and ' + shortTime;
+        document.getElementById('terseDisplay').textContent = 'Current Date and Time(terse): ' + terseDate;
     </script>
 </body>
 </html>

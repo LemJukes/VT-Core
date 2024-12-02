@@ -158,7 +158,6 @@ function getTimeOfDayRange(hour) {
 
 // 
 function validateDateInput(date) {
-  // Remove the default parameter from the main functions and handle it here
   if (date === undefined || date === null) {
     throw new Error('Input must be a valid Date object');
   }
@@ -202,6 +201,33 @@ function lengthyDate(date) {
       return `it is ${dayOfWeek} ${month} ${dayOfMonth}`;
   } catch (error) {
       throw error;
+  }
+}
+
+function shortDate(date) {
+  try {
+    const inputDate = date === undefined ? new Date() : date;
+    validateDateInput(inputDate);
+    
+    const dayOfWeek = DAYS_OF_WEEK[inputDate.getDay()];
+    const dayOfMonth = DAYS_TO_WORDS[inputDate.getDate()];
+    
+    return `it is ${dayOfWeek} the ${dayOfMonth}`;
+  } catch (error) {
+    throw error;
+  }
+}
+
+function terseDate(date) {
+  try {
+    const inputDate = date === undefined ? new Date() : date;
+    validateDateInput(inputDate);
+    
+    const dayOfWeek = DAYS_OF_WEEK[inputDate.getDay()];
+    
+    return `it is ${dayOfWeek}`;
+  } catch (error) {
+    throw error;
   }
 }
 
@@ -350,8 +376,138 @@ function lengthyTime(date) {
   }
 }
 
+function shortTime(date) {
+  try {
+    const inputDate = date === undefined ? new Date() : date;
+    validateDateInput(inputDate);
+    
+    let hours = inputDate.getHours();
+    let minutes = inputDate.getMinutes();
+    
+    // AM/PM designation
+    const meridiem = hours < 12 ? 'am' : 'pm';
+    
+    // Handle special cases first
+    if (hours === 0) {
+      if (minutes === 0) return 'it is midnight';
+      if (minutes <= 4) return 'it is just after midnight';
+      if (minutes === 5) return 'it is five past midnight';
+      if (minutes < 10) return 'it is almost ten past midnight';
+      if (minutes === 10) return 'it is ten past midnight';
+      if (minutes < 15) return 'it is almost quarter past midnight';
+      if (minutes === 15) return 'it is quarter past midnight';
+      if (minutes < 30) return 'it is almost half past midnight';
+      if (minutes === 30) return 'it is half past midnight';
+      if (minutes < 45) return 'it is half past midnight';
+      if (minutes === 45) return 'it is quarter to one am';
+      if (minutes < 50) return 'it is quarter to one am';
+      if (minutes >= 50) return 'it is almost one am';
+    }
+
+    if (hours === 12) {
+      if (minutes === 0) return 'it is noon';
+      if (minutes <= 4) return 'it is just after noon';
+      if (minutes === 5) return 'it is five past noon';
+      if (minutes < 10) return 'it is almost ten past noon';
+      if (minutes === 10) return 'it is ten past noon';
+      if (minutes < 15) return 'it is almost quarter past noon';
+      if (minutes === 15) return 'it is quarter past noon';
+      if (minutes < 30) return 'it is almost half past noon';
+      if (minutes === 30) return 'it is half past noon';
+      if (minutes < 45) return 'it is half past noon';
+      if (minutes === 45) return 'it is quarter to one pm';
+      if (minutes < 50) return 'it is quarter to one pm';
+      if (minutes >= 50) return 'it is almost one pm';
+    }
+
+    // Convert to 12-hour format
+    let displayHour = hours % 12;
+    if (displayHour === 0) displayHour = 12;
+    
+    // Handle regular hours
+    if (minutes === 0) return `it is ${HOURS_TO_WORDS[displayHour]} ${meridiem}`;
+    if (minutes <= 4) return `it is just after ${HOURS_TO_WORDS[displayHour]} ${meridiem}`;
+    if (minutes === 5) return `it is five past ${HOURS_TO_WORDS[displayHour]} ${meridiem}`;
+    if (minutes < 10) return `it is almost ten past ${HOURS_TO_WORDS[displayHour]} ${meridiem}`;
+    if (minutes === 10) return `it is ten past ${HOURS_TO_WORDS[displayHour]} ${meridiem}`;
+    if (minutes < 15) return `it is almost quarter past ${HOURS_TO_WORDS[displayHour]} ${meridiem}`;
+    if (minutes === 15) return `it is quarter past ${HOURS_TO_WORDS[displayHour]} ${meridiem}`;
+    if (minutes < 30) return `it is almost half past ${HOURS_TO_WORDS[displayHour]} ${meridiem}`;
+    if (minutes === 30) return `it is half past ${HOURS_TO_WORDS[displayHour]} ${meridiem}`;
+    if (minutes < 45) return `it is half past ${HOURS_TO_WORDS[displayHour]} ${meridiem}`;
+    
+    // Handle next hour
+    let nextHour = (hours + 1) % 24;
+    let nextDisplayHour = nextHour % 12;
+    if (nextDisplayHour === 0) nextDisplayHour = 12;
+    const nextMeridiem = nextHour < 12 ? 'am' : 'pm';
+    
+    if (minutes === 45) return `it is quarter to ${HOURS_TO_WORDS[nextDisplayHour]} ${nextMeridiem}`;
+    if (minutes < 50) return `it is quarter to ${HOURS_TO_WORDS[nextDisplayHour]} ${nextMeridiem}`;
+    return `it is almost ${HOURS_TO_WORDS[nextDisplayHour]} ${nextMeridiem}`;
+    
+  } catch (error) {
+    throw error;
+  }
+}
+
+function terseTime(date) {
+  try {
+    const inputDate = date === undefined ? new Date() : date;
+    validateDateInput(inputDate);
+    
+    let hours = inputDate.getHours();
+    let minutes = inputDate.getMinutes();
+    
+    // Convert to 12-hour format
+    let displayHour = hours % 12;
+    if (displayHour === 0) displayHour = 12;
+    
+    // Special cases for noon/midnight
+    if (hours === 0 || hours === 12) {
+      if (hours === 0) {
+        if (minutes === 0) return 'its midnight';
+        if (minutes <= 5) return 'its just after midnight';
+        if (minutes < 15) return 'its after midnight';
+      } else {
+        if (minutes === 0) return 'its noon';
+        if (minutes <= 5) return 'its just after noon';
+        if (minutes < 15) return 'its after noon';
+      }
+    }
+
+    // Regular hour patterns
+    if (minutes === 0) return `its ${HOURS_TO_WORDS[displayHour]}`;
+    if (minutes <= 5) return `its just after ${HOURS_TO_WORDS[displayHour]}`;
+    if (minutes < 15) return `its after ${HOURS_TO_WORDS[displayHour]}`;
+    if (minutes < 25) return `its quarter after ${HOURS_TO_WORDS[displayHour]}`;
+    if (minutes < 40) return `its half past ${HOURS_TO_WORDS[displayHour]}`;
+    
+    // Handle next hour references
+    let nextHour = (hours + 1) % 24;
+    let nextDisplayHour = nextHour % 12;
+    if (nextDisplayHour === 0) nextDisplayHour = 12;
+    
+    if (nextHour === 0) {
+      if (minutes >= 50) return 'its almost midnight';
+      return 'its quarter to midnight';
+    }
+    
+    if (nextHour === 12) {
+      if (minutes >= 50) return 'its almost noon';
+      return 'its quarter to noon';
+    }
+    
+    if (minutes >= 50) return `its almost ${HOURS_TO_WORDS[nextDisplayHour]}`;
+    return `its quarter to ${HOURS_TO_WORDS[nextDisplayHour]}`;
+    
+  } catch (error) {
+    throw error;
+  }
+}
+
 // Export for testing
-export { verboseDate, verboseTime, lengthyDate, lengthyTime };
+export { verboseDate, verboseTime, lengthyDate, lengthyTime, shortDate, shortTime, terseDate, terseTime };
 
 // Export Functions
 export function getVerboseTime() {
@@ -365,4 +521,16 @@ export function getLengthyDate() {
 }
 export function getLengthyTime() {
   return lengthyTime();
+}
+export function getShortDate() {
+  return shortDate();
+}
+export function getShortTime() {
+  return shortTime();
+}
+export function getTerseDate() {
+  return terseDate();
+}
+export function getTerseTime() {
+  return terseTime();
 }
