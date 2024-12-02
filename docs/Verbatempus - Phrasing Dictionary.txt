@@ -16,7 +16,7 @@ Phrasing Format Templates:
 
     Lengthy:
         lengthy(date&time) = It is Thursday, October the twenty fourth at twenty minutes past ten oclock in the morning.
-        lengthy(date) = It is Thursday, October the twenty fourth.
+        lengthy(date) = It is Thursday, October, twenty fourth.
         lenghty(time) = It is twenty four past ten in the morning.
 
     Short:
@@ -196,9 +196,13 @@ Time & Date Related Numbers to Words Definitions:
         45 = QUARTER
 
     Time of day hour ranges:
-        1 - 11 = IN THE MORNING
+        1 - 11 = IN THE MORNING 
         13 - 16 = IN THE AFTERNOON
         17 - 23 = IN THE EVENING
+
+    Short Time of day hour rangees:
+        0-11 = AM
+        12-23 = PM
 
     Time of day minute ranges:
         00-00 = Does not use minutes

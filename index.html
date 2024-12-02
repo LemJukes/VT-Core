@@ -1,19 +1,25 @@
 <!-- index.html -->
-
 <!DOCTYPE html>
-<html>
-    <body>
-        <h1 id="verboseDateDisplay"></h1>
-        <h1 id="verboseTimeDisplay"></h1>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbose Date and Time</title>
+</head>
+<body>
+    <h3 id="verboseDisplay"></h3>
+    <h3 id="legnthyDisplay"></h3>
 
     <script type="module">
         import { getVerboseDate } from './src/verbatempus.js';
         import { getVerboseTime } from './src/verbatempus.js';
+        import { getLengthyDate } from './src/verbatempus.js';
 
         const verboseDate = getVerboseDate();
         const verboseTime = getVerboseTime();
-        document.getElementById('verboseDateDisplay').textContent = 'Current Date(verbose): ' + verboseDate;
-        document.getElementById('verboseTimeDisplay').textContent = 'Current Time(verbose): ' + verboseTime;
+        const lengthyDate = getLengthyDate();
+        document.getElementById('verboseDisplay').textContent = 'Current Date and Time(verbose): ' + verboseDate + ' and ' + verboseTime;
+        document.getElementById('legnthyDisplay').textContent = 'Current Date and Time(lengthy): ' + lengthyDate + ' and ' + verboseTime;
     </script>
+</body>
 </html>

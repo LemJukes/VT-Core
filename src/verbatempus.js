@@ -184,9 +184,24 @@ function verboseDate(date) {
     const dayOfMonth = DAYS_TO_WORDS[inputDate.getDate()];
     const year = formatYear(inputDate.getFullYear());
     
-    return `it is ${dayOfWeek}, ${month} the ${dayOfMonth}, ${year}`;
+    return `it is ${dayOfWeek} ${month} the ${dayOfMonth} ${year}`;
   } catch (error) {
     throw error;
+  }
+}
+
+function lengthyDate(date) {
+  try {
+      const inputDate = date === undefined ? new Date() : date;
+      validateDateInput(inputDate);
+      
+      const dayOfWeek = DAYS_OF_WEEK[inputDate.getDay()];
+      const month = MONTHS_TO_WORDS[inputDate.getMonth() + 1];
+      const dayOfMonth = DAYS_TO_WORDS[inputDate.getDate()];
+      
+      return `it is ${dayOfWeek} ${month} ${dayOfMonth}`;
+  } catch (error) {
+      throw error;
   }
 }
 
@@ -270,8 +285,73 @@ function verboseTime(date) {
   }
 }
 
+function lengthyTime(date) {
+  try {
+    const inputDate = date === undefined ? new Date() : date;
+    validateDateInput(inputDate);
+    
+    let hours = inputDate.getHours();
+    let minutes = inputDate.getMinutes();
+    
+    // Handle special cases first
+    if (hours === 0) {
+      if (minutes === 0) return 'it is midnight';
+      if (minutes === 15) return 'it is quarter past midnight';
+      if (minutes === 30) return 'it is half past midnight';
+      if (minutes < 45) return `it is ${MINUTES_TO_WORDS[minutes]} past midnight`;
+    }
+    
+    if (hours === 12) {
+      if (minutes === 0) return 'it is noon';
+      if (minutes === 15) return 'it is quarter past noon';
+      if (minutes === 30) return 'it is half past noon';
+      if (minutes < 45) return `it is ${MINUTES_TO_WORDS[minutes]} past noon`;
+    }
+    
+    // Convert 24h to 12h format
+    let displayHour = hours % 12;
+    if (displayHour === 0) displayHour = 12;
+    
+    // For exact hours
+    if (minutes === 0) {
+      return `it is ${HOURS_TO_WORDS[displayHour]} ${getTimeOfDayRange(hours)}`;
+    }
+    
+    // Handle minutes before next hour (45-59)
+    if (minutes >= 45) {
+      let nextHour = (hours + 1) % 24;
+      let nextDisplayHour = nextHour % 12;
+      if (nextDisplayHour === 0) nextDisplayHour = 12;
+      
+      if (nextHour === 0) {
+        return `it is ${MINUTES_TO_WORDS[minutes]} to midnight`;
+      }
+      
+      if (nextHour === 12) {
+        return `it is ${MINUTES_TO_WORDS[minutes]} to noon`;
+      }
+      
+      return `it is ${MINUTES_TO_WORDS[minutes]} to ${HOURS_TO_WORDS[nextDisplayHour]} ${getTimeOfDayRange(nextHour)}`;
+    }
+    
+    // Handle minutes past the hour (1-44)
+    if (minutes === 15) {
+      return `it is quarter past ${HOURS_TO_WORDS[displayHour]} ${getTimeOfDayRange(hours)}`;
+    }
+    
+    if (minutes === 30) {
+      return `it is half past ${HOURS_TO_WORDS[displayHour]} ${getTimeOfDayRange(hours)}`;
+    }
+    
+    return `it is ${MINUTES_TO_WORDS[minutes]} past ${HOURS_TO_WORDS[displayHour]} ${getTimeOfDayRange(hours)}`;
+    
+  } catch (error) {
+    throw error;
+  }
+}
+
 // Export for testing
-export { verboseTime, verboseDate };
+export { verboseDate, verboseTime, lengthyDate, lengthyTime };
 
 // Export Functions
 export function getVerboseTime() {
@@ -280,4 +360,9 @@ export function getVerboseTime() {
 export function getVerboseDate() {
   return verboseDate();
 }
-
+export function getLengthyDate() {
+  return lengthyDate();
+}
+export function getLengthyTime() {
+  return lengthyTime();
+}
