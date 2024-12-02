@@ -3,13 +3,17 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <h1 id="verbatempusDisplay"></h1>
+        <h1 id="verboseDateDisplay"></h1>
+        <h1 id="verboseTimeDisplay"></h1>
     </body>
 
     <script type="module">
-        import { getVerbatempus } from './src/verbatempus.js';
+        import { getVerboseDate } from './src/verbatempus.js';
+        import { getVerboseTime } from './src/verbatempus.js';
 
-        const verbatempus = getVerbatempus();
-        document.getElementById('verbatempusDisplay').textContent = verbatempus;
+        const verboseDate = getVerboseDate();
+        const verboseTime = getVerboseTime();
+        document.getElementById('verboseDateDisplay').textContent = 'Current Date: ' + verboseDate;
+        document.getElementById('verboseTimeDisplay').textContent = 'Current Time: ' + verboseTime;
     </script>
 </html>

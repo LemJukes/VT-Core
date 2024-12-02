@@ -10,8 +10,8 @@ Phrasing Format Templates:
     NB: These template examples are only to show the rough length and complexity of each phrasing, different times of day will have variations in the wording.
 
     Verbose:
-        verbose(date&time) = It is two thousand and twenty four, on Thursday, October the twenty fourth, and it is twenty four minutes past ten oclock in the morning. 
-        verbose(date) = It is two thousand and twenty four, on Thursday, October the twenty fourth.
+        verbose(date&time) = It is Thursday, October the twenty fourth, twenty twenty four, and it is twenty four minutes past ten oclock in the morning. 
+        verbose(date) = It is Thursday, October the twenty fourth, twenty twenty four.
         verbose(time) = It is twenty four minutes past ten oclock in the morning.
 
     Lengthy:
@@ -33,10 +33,72 @@ Phrasing Format Templates:
 Time & Date Related Numbers to Words Definitions:
 
     YEARS:
+        CE:
+        0-99 = ZERO-NINETY NINE
+        100-1000 = ONE HUNDRED-TEN HUNDRED
+        1100-1900 = ELEVEN HUNDRED-NINETEEN HUNDRED
+        2000-2009 = TWO THOUSAND-TWO THOUSAND AND NINE
+        2010-2999 = TWENTY TEN-TWENTY NINE NINETY NINE
+        3000-3009 = THREE THOUSAND-THREE THOUSAND AND NINE
+        3010-3999 = THIRTY TEN-THIRTY NINETY NINE
+        
     MONTHS:
+        1 = JANUARY
+        2 = FEBRUARY
+        3 = MARCH
+        4 = APRIL
+        5 = MAY
+        6 = JUNE
+        7 = JULY
+        8 = AUGUST
+        9 = SEPTEMBER
+        10 = OCTOBER
+        11 = NOVEMBER
+        12 = DECEMBER
+    
     DAYS:
+        1 = FIRST
+        2 = SECOND
+        3 = THIRD
+        4 = FOURTH
+        5 = FIFTH
+        6 = SIXTH
+        7 = SEVENTH
+        8 = EIGHTH
+        9 = NINTH
+        10 = TENTH
+        11 = ELEVENTH
+        12 = TWELFTH
+        13 = THIRTEENTH
+        14 = FOURTEENTH
+        15 = FIFTEENTH
+        16 = SIXTEENTH
+        17 = SEVENTEENTH
+        18 = EIGHTEENTH
+        19 = NINETEENTH
+        20 = TWENTIETH
+        21 = TWENTY FIRST
+        22 = TWENTY SECOND
+        23 = TWENTY THIRD
+        24 = TWENTY FOURTH
+        25 = TWENTY FIFTH
+        26 = TWENTY SIXTH
+        27 = TWENTY SEVENTH
+        28 = TWENTY EIGHTH
+        29 = TWENTY NINTH
+        30 = THIRTIETH
+        31 = THIRTY FIRST
+   
+   DAYS OF THE WEEK:
+        1 = MONDAY
+        2 = TUESDAY
+        3 = WEDNESDAY
+        4 = THURSDAY
+        5 = FRIDAY
+        6 = SATURDAY
+        7 = SUNDAY
 
-    HOURS:
+   HOURS:
         0 = MIDNIGHT
         1 = ONE
         2 = TWO
