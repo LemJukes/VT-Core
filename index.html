@@ -104,11 +104,13 @@
 
         function updateClock() {
             const now = new Date();
-            const timeStr = now.toISOString().split('T')[1].slice(0, -1);
-            document.getElementById('utcClock').textContent = timeStr;
+            const isoString = now.toISOString();
+            const dateStr = isoString.split('T')[0];
+            const timeStr = isoString.split('T')[1].slice(0, -1);
+            document.getElementById('utcClock').textContent = `${dateStr} ${timeStr}`;
             requestAnimationFrame(updateClock);
         }
-        
+                
         // Initialize Displays and Clock
         updateClock();
         updateDisplays();
