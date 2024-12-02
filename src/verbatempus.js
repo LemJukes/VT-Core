@@ -158,6 +158,11 @@ function getTimeOfDayRange(hour) {
 
 // 
 function validateDateInput(date) {
+  // Remove the default parameter from the main functions and handle it here
+  if (date === undefined || date === null) {
+    throw new Error('Input must be a valid Date object');
+  }
+  
   if (!(date instanceof Date)) {
     throw new Error('Input must be a valid Date object');
   }
@@ -169,28 +174,29 @@ function validateDateInput(date) {
 
 // Primary Functions
 // Date Primary Functions
-function verboseDate(date = new Date()) {
+function verboseDate(date) {
   try {
-    validateDateInput(date);
-      const dayOfWeek = DAYS_OF_WEEK[date.getDay()];
-      const month = MONTHS_TO_WORDS[date.getMonth() + 1];
-      const dayOfMonth = DAYS_TO_WORDS[date.getDate()];
-      const year = formatYear(date.getFullYear());
+    const inputDate = date === undefined ? new Date() : date;
+    validateDateInput(inputDate);  // Changed from date to inputDate
     
-      // Following template: "It is Thursday, October the twenty fourth, twenty twenty four"
-      return `it is ${dayOfWeek}, ${month} the ${dayOfMonth}, ${year}`;
+    const dayOfWeek = DAYS_OF_WEEK[inputDate.getDay()];
+    const month = MONTHS_TO_WORDS[inputDate.getMonth() + 1];
+    const dayOfMonth = DAYS_TO_WORDS[inputDate.getDate()];
+    const year = formatYear(inputDate.getFullYear());
+    
+    return `it is ${dayOfWeek}, ${month} the ${dayOfMonth}, ${year}`;
   } catch (error) {
     throw error;
   }
 }
 
-
 // Time Primary Functions
-function verboseTime(date = new Date()) {
+function verboseTime(date) {
   try {
-    validateDateInput(date);
-      let hours = date.getHours();
-      let minutes = date.getMinutes();
+    const inputDate = date === undefined ? new Date() : date;
+    validateDateInput(inputDate);
+      let hours = inputDate.getHours();
+      let minutes = inputDate.getMinutes();
       
       // Handle special cases first 
       if (hours === 0) {

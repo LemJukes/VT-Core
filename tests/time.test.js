@@ -75,3 +75,4 @@ describe('verboseTime error handling', () => {
         .toThrow('Input must be a valid Date object');
     });
   });
+
