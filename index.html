@@ -49,11 +49,19 @@
             text-decoration: none;
             border-radius: 5px;
         }
+        .clock {
+            font-size: 3rem;
+            font-family: monospace;
+            font-weight: bold;
+            color: #24292e;
+            margin: 10px 0;
+        }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>Verbatempus - A Clock full of Words</h1>
+        <div id="utcClock" class="clock">00:00:00.000</div>
     </div>
 
     <div class="content">
@@ -78,18 +86,35 @@
         import { getTerseDate } from './src/verbatempus.js';
         import { getTerseTime } from './src/verbatempus.js';
 
-        const verboseDate = getVerboseDate();
-        const verboseTime = getVerboseTime();
-        const lengthyDate = getLengthyDate();
-        const lenghtyTime = getLengthyTime();
-        const shortDate = getShortDate();
-        const shortTime = getShortTime();
-        const terseDate = getTerseDate();
-        const terseTime = getTerseTime();
-        document.getElementById('verboseDisplay').textContent = 'Current Date and Time(verbose): ' + verboseDate + ' and ' + verboseTime;
-        document.getElementById('legnthyDisplay').textContent = 'Current Date and Time(lengthy): ' + lengthyDate + ' and ' + lenghtyTime;
-        document.getElementById('shortDisplay').textContent = 'Current Date and Time(short): ' + shortDate + ' and ' + shortTime;
-        document.getElementById('terseDisplay').textContent = 'Current Date and Time(terse): ' + terseDate + ' and ' + terseTime;
+        function updateDisplays() {
+            const verboseDate = getVerboseDate();
+            const verboseTime = getVerboseTime();
+            const lengthyDate = getLengthyDate();
+            const lengthyTime = getLengthyTime();
+            const shortDate = getShortDate();
+            const shortTime = getShortTime();
+            const terseDate = getTerseDate();
+            const terseTime = getTerseTime();
+
+            document.getElementById('verboseDisplay').textContent = 'Current Date and Time(verbose): ' + verboseDate + ' and ' + verboseTime;
+            document.getElementById('legnthyDisplay').textContent = 'Current Date and Time(lengthy): ' + lengthyDate + ' and ' + lengthyTime;
+            document.getElementById('shortDisplay').textContent = 'Current Date and Time(short): ' + shortDate + ' and ' + shortTime;
+            document.getElementById('terseDisplay').textContent = 'Current Date and Time(terse): ' + terseDate + ' and ' + terseTime;
+        }
+
+        function updateClock() {
+            const now = new Date();
+            const timeStr = now.toISOString().split('T')[1].slice(0, -1);
+            document.getElementById('utcClock').textContent = timeStr;
+            requestAnimationFrame(updateClock);
+        }
+        
+        // Initialize Displays and Clock
+        updateClock();
+        updateDisplays();
+
+        // Update Displays every second
+        setInterval(updateDisplays, 1000);
     </script>
 </body>
 </html>
