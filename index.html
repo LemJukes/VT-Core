@@ -20,6 +20,7 @@
         import { getShortDate } from './src/verbatempus.js';
         import { getShortTime } from './src/verbatempus.js';
         import { getTerseDate } from './src/verbatempus.js';
+        import { getTerseTime } from './src/verbatempus.js';
 
         const verboseDate = getVerboseDate();
         const verboseTime = getVerboseTime();
@@ -28,10 +29,11 @@
         const shortDate = getShortDate();
         const shortTime = getShortTime();
         const terseDate = getTerseDate();
+        const terseTime = getTerseTime();
         document.getElementById('verboseDisplay').textContent = 'Current Date and Time(verbose): ' + verboseDate + ' and ' + verboseTime;
         document.getElementById('legnthyDisplay').textContent = 'Current Date and Time(lengthy): ' + lengthyDate + ' and ' + lenghtyTime;
         document.getElementById('shortDisplay').textContent = 'Current Date and Time(short): ' + shortDate + ' and ' + shortTime;
-        document.getElementById('terseDisplay').textContent = 'Current Date and Time(terse): ' + terseDate;
+        document.getElementById('terseDisplay').textContent = 'Current Date and Time(terse): ' + terseDate + ' and ' + terseTime;
     </script>
 </body>
 </html>
