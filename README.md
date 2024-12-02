@@ -51,5 +51,5 @@ terseDate() // "it is thursday"
 terseTime() // "its quarter after ten"
 ```
 
-License
-MIT License - See license.txt for details. ```
+## License
+MIT License - See license.txt for details.
