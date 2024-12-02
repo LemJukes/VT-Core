@@ -106,7 +106,7 @@
             const now = new Date();
             const isoString = now.toISOString();
             const dateStr = isoString.split('T')[0];
-            const timeStr = isoString.split('T')[1].slice(0, -1);
+            const timeStr = isoString.split('T')[1].slice(0, 8);
             document.getElementById('utcClock').textContent = `${dateStr} ${timeStr}`;
             requestAnimationFrame(updateClock);
         }
