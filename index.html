@@ -4,13 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verbatempus - A Clock full of Words</title>
+    <title>Verbatempus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header, .footer {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .display {
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .github-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #24292e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h4 id="verboseDisplay"></h4>
-    <h4 id="legnthyDisplay"></h4>
-    <h4 id="shortDisplay"></h4>
-    <h4 id="terseDisplay"></h4>
+    <div class="header">
+        <h1>Verbatempus - A Clock full of Words</h1>
+    </div>
+
+    <div class="content">
+        <div id="verboseDisplay" class="display"></div>
+        <div id="legnthyDisplay" class="display"></div>
+        <div id="shortDisplay" class="display"></div>
+        <div id="terseDisplay" class="display"></div>
+    </div>.
+
+    <div class="footer">
+        <p>by Juke LTD.</p>
+        <a href="https://github.com/LemJukes/VT-Core/tree/main" class="github-button">View on GitHub</a>
+    </div>
 
     <script type="module">
         import { getVerboseDate } from './src/verbatempus.js';
