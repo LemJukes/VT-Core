@@ -28,17 +28,28 @@ console.log(shortDate(new Date(2024, 0, 1)));
 
 ```
 
-Formatting Styles
-Verbose: Most detailed format.
+## Formatting Styles
+
+### Verbose:
 ```
 verboseDate() // "it is thursday october the twenty fourth twenty twenty four"
 verboseTime() // "it is twenty four minutes past ten oclock in the morning"  
 ```
-Lengthy: Moderately detailed
-
-Short: Simplified but clear
-
-Terse: Most concise
+### Lengthy: 
+```
+lengthyDate() // "it is thursday october twenty fourth"
+lengthyTime() // "it is twenty four past ten in the morning"
+```
+### Short:
+```
+shortDate() // "it is thursday the twenty fourth"
+shortTime() // "it is twenty past ten am"
+```
+### Terse:
+```
+terseDate() // "it is thursday"
+terseTime() // "its quarter after ten"
+```
 
 License
 MIT License - See license.txt for details. ```
