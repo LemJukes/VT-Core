@@ -156,92 +156,116 @@ function getTimeOfDayRange(hour) {
   return '';
 }
 
-// Primary Functions
+// 
+function validateDateInput(date) {
+  if (!(date instanceof Date)) {
+    throw new Error('Input must be a valid Date object');
+  }
+  
+  if (isNaN(date.getTime())) {
+    throw new Error('Invalid Date: date object contains an invalid date');
+  }
+}
 
+// Primary Functions
 // Date Primary Functions
 function verboseDate(date = new Date()) {
-  const dayOfWeek = DAYS_OF_WEEK[date.getDay()];
-  const month = MONTHS_TO_WORDS[date.getMonth() + 1];
-  const dayOfMonth = DAYS_TO_WORDS[date.getDate()];
-  const year = formatYear(date.getFullYear());
-
-  // Following template: "It is Thursday, October the twenty fourth, twenty twenty four"
-  return `it is ${dayOfWeek}, ${month} the ${dayOfMonth}, ${year}`;
+  try {
+    validateDateInput(date);
+      const dayOfWeek = DAYS_OF_WEEK[date.getDay()];
+      const month = MONTHS_TO_WORDS[date.getMonth() + 1];
+      const dayOfMonth = DAYS_TO_WORDS[date.getDate()];
+      const year = formatYear(date.getFullYear());
+    
+      // Following template: "It is Thursday, October the twenty fourth, twenty twenty four"
+      return `it is ${dayOfWeek}, ${month} the ${dayOfMonth}, ${year}`;
+  } catch (error) {
+    throw error;
+  }
 }
+
 
 // Time Primary Functions
 function verboseTime(date = new Date()) {
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  
-  // Handle special cases first 
-  if (hours === 0) {
-    if (minutes === 0) return 'It is midnight';
-    if (minutes === 1) return 'it is one minute past midnight';
-    if (minutes === 15) return 'it is quarter past midnight';
-    if (minutes === 30) return 'it is half past midnight';
-    if (minutes < 45) return `it is ${MINUTES_TO_WORDS[minutes]} minutes past midnight`;
+  try {
+    validateDateInput(date);
+      let hours = date.getHours();
+      let minutes = date.getMinutes();
+      
+      // Handle special cases first 
+      if (hours === 0) {
+        if (minutes === 0) return 'It is midnight';
+        if (minutes === 1) return 'it is one minute past midnight';
+        if (minutes === 15) return 'it is quarter past midnight';
+        if (minutes === 30) return 'it is half past midnight';
+        if (minutes < 45) return `it is ${MINUTES_TO_WORDS[minutes]} minutes past midnight`;
+      }
+      
+      if (hours === 12) {
+        if (minutes === 0) return 'It is noon';
+        if (minutes === 1) return 'it is one minute past noon';
+        if (minutes === 15) return 'it is quarter past noon';
+        if (minutes === 30) return 'it is half past noon';
+        if (minutes < 45) return `it is ${MINUTES_TO_WORDS[minutes]} minutes past noon`;
+      }
+      
+      // Convert 24h to 12h format
+      let displayHour = hours % 12;
+      if (displayHour === 0) displayHour = 12;
+      
+      // For exact hours
+      if (minutes === 0) {
+        return `it is ${HOURS_TO_WORDS[displayHour]} oclock ${getTimeOfDayRange(hours)}`;
+      }
+      
+      // Handle minutes before next hour (45-59)
+      if (minutes >= 45) {
+        let nextHour = (hours + 1) % 24;
+        let nextDisplayHour = nextHour % 12;
+        if (nextDisplayHour === 0) nextDisplayHour = 12;
+        
+        if (nextHour === 0) {
+          if (minutes === 59) return 'it is one minute to midnight';
+          return `it is ${MINUTES_TO_WORDS[minutes]} minutes to midnight`;
+        }
+        
+        if (nextHour === 12) {
+          if (minutes === 59) return 'it is one minute to noon';
+          return `it is ${MINUTES_TO_WORDS[minutes]} minutes to noon`;
+        }
+        
+        if (minutes === 45) {
+          return `it is quarter to ${HOURS_TO_WORDS[nextDisplayHour]} oclock ${getTimeOfDayRange(nextHour)}`;
+        }
+        
+        if (minutes === 59) {
+          return `it is one minute to ${HOURS_TO_WORDS[nextDisplayHour]} oclock ${getTimeOfDayRange(nextHour)}`;
+        }
+        
+        return `it is ${MINUTES_TO_WORDS[minutes]} minutes to ${HOURS_TO_WORDS[nextDisplayHour]} oclock ${getTimeOfDayRange(nextHour)}`;
+      }
+      
+      // Handle minutes past the hour
+      if (minutes === 15) {
+        return `it is quarter past ${HOURS_TO_WORDS[displayHour]} oclock ${getTimeOfDayRange(hours)}`;
+      }
+      
+      if (minutes === 30) {
+        return `it is half past ${HOURS_TO_WORDS[displayHour]} oclock ${getTimeOfDayRange(hours)}`;
+      }
+      
+      if (minutes === 1) {
+        return `it is one minute past ${HOURS_TO_WORDS[displayHour]} oclock ${getTimeOfDayRange(hours)}`;
+      }
+      
+      return `it is ${MINUTES_TO_WORDS[minutes]} minutes past ${HOURS_TO_WORDS[displayHour]} oclock ${getTimeOfDayRange(hours)}`;
+      } catch (error) {
+        throw error;
   }
-  
-  if (hours === 12) {
-    if (minutes === 0) return 'It is noon';
-    if (minutes === 1) return 'it is one minute past noon';
-    if (minutes === 15) return 'it is quarter past noon';
-    if (minutes === 30) return 'it is half past noon';
-    if (minutes < 45) return `it is ${MINUTES_TO_WORDS[minutes]} minutes past noon`;
-  }
-  
-  // Convert 24h to 12h format
-  let displayHour = hours % 12;
-  if (displayHour === 0) displayHour = 12;
-  
-  // For exact hours
-  if (minutes === 0) {
-    return `it is ${HOURS_TO_WORDS[displayHour]} oclock ${getTimeOfDayRange(hours)}`;
-  }
-  
-  // Handle minutes before next hour (45-59)
-  if (minutes >= 45) {
-    let nextHour = (hours + 1) % 24;
-    let nextDisplayHour = nextHour % 12;
-    if (nextDisplayHour === 0) nextDisplayHour = 12;
-    
-    if (nextHour === 0) {
-      if (minutes === 59) return 'it is one minute to midnight';
-      return `it is ${MINUTES_TO_WORDS[minutes]} minutes to midnight`;
-    }
-    
-    if (nextHour === 12) {
-      if (minutes === 59) return 'it is one minute to noon';
-      return `it is ${MINUTES_TO_WORDS[minutes]} minutes to noon`;
-    }
-    
-    if (minutes === 45) {
-      return `it is quarter to ${HOURS_TO_WORDS[nextDisplayHour]} oclock ${getTimeOfDayRange(nextHour)}`;
-    }
-    
-    if (minutes === 59) {
-      return `it is one minute to ${HOURS_TO_WORDS[nextDisplayHour]} oclock ${getTimeOfDayRange(nextHour)}`;
-    }
-    
-    return `it is ${MINUTES_TO_WORDS[minutes]} minutes to ${HOURS_TO_WORDS[nextDisplayHour]} oclock ${getTimeOfDayRange(nextHour)}`;
-  }
-  
-  // Handle minutes past the hour
-  if (minutes === 15) {
-    return `it is quarter past ${HOURS_TO_WORDS[displayHour]} oclock ${getTimeOfDayRange(hours)}`;
-  }
-  
-  if (minutes === 30) {
-    return `it is half past ${HOURS_TO_WORDS[displayHour]} oclock ${getTimeOfDayRange(hours)}`;
-  }
-  
-  if (minutes === 1) {
-    return `it is one minute past ${HOURS_TO_WORDS[displayHour]} oclock ${getTimeOfDayRange(hours)}`;
-  }
-  
-  return `it is ${MINUTES_TO_WORDS[minutes]} minutes past ${HOURS_TO_WORDS[displayHour]} oclock ${getTimeOfDayRange(hours)}`;
 }
+
+// Export for testing
+export { verboseTime, verboseDate };
 
 // Export Functions
 export function getVerboseTime() {
@@ -250,13 +274,4 @@ export function getVerboseTime() {
 export function getVerboseDate() {
   return verboseDate();
 }
-
-// Console Log Testing Area
-console.log('getVerboseTime() returns:' + getVerboseTime());
-console.log('getVerboseDate(); returns:' + getVerboseDate());
-console.log('verboseTime(new Date(2021, 0, 1, 0, 0)) returns:' + verboseTime(new Date(2021, 0, 1, 0, 0)));
-console.log('verboseTime(new Date(2021, 0, 1, 0, 1)) returns:' + verboseTime(new Date(2021, 0, 1, 0, 27)));
-console.log('verboseTime(new Date(2021, 0, 1, 12, 0)) returns:' + verboseTime(new Date(2021, 0, 1, 12, 0)));
-console.log('verboseTime(new Date(2021, 0, 1, 12, 15)) returns:' + verboseTime(new Date(2021, 0, 1, 12, 27)));
-
 

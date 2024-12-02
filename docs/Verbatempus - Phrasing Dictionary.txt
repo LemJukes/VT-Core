@@ -41,6 +41,7 @@ Time & Date Related Numbers to Words Definitions:
         2010-2999 = TWENTY TEN-TWENTY NINE NINETY NINE
         3000-3009 = THREE THOUSAND-THREE THOUSAND AND NINE
         3010-3999 = THIRTY TEN-THIRTY NINETY NINE
+        10000 = TEN THOUSAND
         
     MONTHS:
         1 = JANUARY
