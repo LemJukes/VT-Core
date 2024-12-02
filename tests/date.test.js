@@ -1,4 +1,4 @@
-import { verboseDate } from '../src/verbatempus.js';
+import { verboseDate, lengthyDate } from '../src/verbatempus.js';
 
 describe('verboseDate', () => {
   describe('Year formatting', () => {
@@ -49,3 +49,58 @@ describe('verboseDate error handling', () => {
     });
   });
 
+
+  describe('lengthyDate', () => {
+    describe('Basic formatting', () => {
+      test('sample date matches dictionary format', () => {
+        expect(lengthyDate(new Date(2024, 9, 24)))
+          .toBe('it is thursday october twenty fourth');
+      });
+  
+      test('start of year', () => {
+        expect(lengthyDate(new Date(2024, 0, 1)))
+          .toBe('it is monday january first');
+      });
+  
+      test('end of year', () => {
+        expect(lengthyDate(new Date(2024, 11, 31)))
+          .toBe('it is tuesday december thirty first');
+      });
+    });
+  
+    describe('Month formatting', () => {
+      const testDate = new Date(2024, 5, 15); // June 15, 2024
+      test('converts month correctly', () => {
+        expect(lengthyDate(testDate))
+          .toBe('it is saturday june fifteenth');
+      });
+    });
+  
+    describe('Day formatting', () => {
+      test('first of month', () => {
+        expect(lengthyDate(new Date(2024, 3, 1)))
+          .toBe('it is monday april first');
+      });
+  
+      test('thirty first', () => {
+        expect(lengthyDate(new Date(2024, 0, 31)))
+          .toBe('it is wednesday january thirty first');
+      });
+    });
+  
+    describe('Error handling', () => {
+      test('throws on invalid Date object', () => {
+        expect(() => lengthyDate(new Date('invalid')))
+          .toThrow('Invalid Date: date object contains an invalid date');
+      });
+  
+      test('throws on non-Date input', () => {
+        expect(() => lengthyDate('2024-01-01'))
+          .toThrow('Input must be a valid Date object');
+        expect(() => lengthyDate(null))
+          .toThrow('Input must be a valid Date object');
+        expect(() => lengthyDate(undefined))
+          .toThrow('Input must be a valid Date object');
+      });
+    });
+  });
