@@ -217,5 +217,8 @@
   "bugs": {
     "url": "https://github.com/LemJukes/VT-Core/issues"
   },
+  "publishConfig": {
+  "registry": "https://npm.pkg.github.com"
+},
   "homepage": "https://github.com/LemJukes/VT-Core#readme"
 }
