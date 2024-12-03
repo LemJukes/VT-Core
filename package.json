@@ -6,7 +6,7 @@
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "devDependencies": {
-    "jest": "^29.x.x"
+    "jest": "^29.7.0"
   },
   "description": "A lightweight javascript library that converts a javascript date object into a natural language phrase with varying levels of verbosity. Current Supported Languages: English only(for now).",
   "main": "src/verbatempus.js",
