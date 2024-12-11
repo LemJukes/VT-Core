@@ -51,5 +51,9 @@ terseDate() // "it is thursday"
 terseTime() // "its quarter after ten"
 ```
 
+## AI Disclaimer
+
+This project was developed using GitHub Copilot with source assistance from Claude 3.5 Sonnet and ChatGPT-4 LLMs as part of the development toolset. Any errors, inefficiencies, or bad practices are still however likely to be the author's fault and therefore responsibility. Any and all constructive feedback on better development strategies is more than welcome.
+
 ## License
 MIT License - See license.txt for details.
