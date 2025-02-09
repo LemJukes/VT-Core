@@ -1,6 +1,5 @@
 // src/verbatempus.js
 
-// Constants
 const HOURS_TO_WORDS = {
   0: 'midnight',
   1: 'one',
@@ -89,12 +88,12 @@ const DAYS_OF_WEEK = {
   4: 'thursday',
   5: 'friday',
   6: 'saturday',
-  0: 'sunday' // getDay() returns 0 for Sunday
+  0: 'sunday' 
 };
 
 
 // Helper Functions
-// Helper function to convert numbers 1-99 to words
+// Convert numbers 1-99 to words
 function numberToWords(num) {
   const ones = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
                "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", 
@@ -156,7 +155,7 @@ function getTimeOfDayRange(hour) {
   return '';
 }
 
-// 
+// Another Input Validation
 function validateDateInput(date) {
   if (date === undefined || date === null) {
     throw new Error('Input must be a valid Date object');
