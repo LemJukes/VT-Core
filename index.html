@@ -86,10 +86,10 @@
 
     <div class="content">
         <div id="verboseDisplay" class="display"></div>
-        <div id="legnthyDisplay" class="display"></div>
+        <div id="lengthyDisplay" class="display"></div>
         <div id="shortDisplay" class="display"></div>
         <div id="terseDisplay" class="display"></div>
-    </div>.
+    </div>
 
     <div class="navigation">
         <h2>Displays</h2>
@@ -103,29 +103,16 @@
     </div>
 
     <script type="module">
-        import { getVerboseDate } from './src/verbatempus.js';
-        import { getVerboseTime } from './src/verbatempus.js';
-        import { getLengthyDate } from './src/verbatempus.js';
-        import { getLengthyTime } from './src/verbatempus.js';
-        import { getShortDate } from './src/verbatempus.js';
-        import { getShortTime } from './src/verbatempus.js';
-        import { getTerseDate } from './src/verbatempus.js';
-        import { getTerseTime } from './src/verbatempus.js';
+        import { format } from './src/index.js';
+
+        const LEVELS = ['verbose', 'lengthy', 'short', 'terse'];
 
         function updateDisplays() {
-            const verboseDate = getVerboseDate();
-            const verboseTime = getVerboseTime();
-            const lengthyDate = getLengthyDate();
-            const lengthyTime = getLengthyTime();
-            const shortDate = getShortDate();
-            const shortTime = getShortTime();
-            const terseDate = getTerseDate();
-            const terseTime = getTerseTime();
-
-            document.getElementById('verboseDisplay').textContent = 'Current Date and Time(verbose): ' + verboseDate + ' and ' + verboseTime;
-            document.getElementById('legnthyDisplay').textContent = 'Current Date and Time(lengthy): ' + lengthyDate + ' and ' + lengthyTime;
-            document.getElementById('shortDisplay').textContent = 'Current Date and Time(short): ' + shortDate + ' and ' + shortTime;
-            document.getElementById('terseDisplay').textContent = 'Current Date and Time(terse): ' + terseDate + ' and ' + terseTime;
+            const now = new Date();
+            for (const level of LEVELS) {
+                document.getElementById(level + 'Display').textContent =
+                    'Current Date and Time(' + level + '): ' + format(now, { level, parts: 'both' });
+            }
         }
 
         function updateClock() {
