@@ -5,90 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verbatempus</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        .header, .footer {
-            width: 100%;
-            text-align: center;
-            padding: 10px;
-            background-color: #f8f9fa;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .content {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-        .display {
-            margin: 10px 0;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            width: 80%;
-            max-width: 600px;
-            text-align: center;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .github-button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 5px;
-            background-color: #24292e;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .clock {
-            font-size: 3rem;
-            font-family: monospace;
-            font-weight: bold;
-            color: #24292e;
-            margin: 10px 0;
-        }
-        .navigation {
-            padding: 20px;
-            margin: 20px auto;
-            border-radius: 5px;
-            width: 80%;
-            max-width: 600px;
-            text-align: center;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .nav-link {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 5px;
-            background-color: #24292e;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
+    <meta name="description" content="Verbatempus turns a JavaScript Date into an English phrase you can read or say aloud, at four levels of verbosity.">
+    <link rel="stylesheet" href="site.css">
 </head>
 <body>
     <div class="header">
         <h1>Verbatempus - A Clock full of Words</h1>
         <div id="utcClock" class="clock">00:00:00.000</div>
+        <nav class="site-nav" aria-label="Site">
+            <a href="./" class="nav-link" aria-current="page">Home</a>
+            <a href="usage.html" class="nav-link">Usage</a>
+            <a href="https://www.npmjs.com/package/verbatempus" class="nav-link">npm</a>
+            <a href="https://github.com/LemJukes/VT-Core" class="nav-link">GitHub</a>
+        </nav>
     </div>
 
     <div class="content">
-        <div id="verboseDisplay" class="display"></div>
-        <div id="lengthyDisplay" class="display"></div>
-        <div id="shortDisplay" class="display"></div>
-        <div id="terseDisplay" class="display"></div>
+        <div class="display"><span class="level">verbose</span><span id="verboseDisplay"></span></div>
+        <div class="display"><span class="level">lengthy</span><span id="lengthyDisplay"></span></div>
+        <div class="display"><span class="level">short</span><span id="shortDisplay"></span></div>
+        <div class="display"><span class="level">terse</span><span id="terseDisplay"></span></div>
     </div>
 
     <div class="navigation">
@@ -99,7 +35,6 @@
 
     <div class="footer">
         <p>by Juke LTD.</p>
-        <a href="https://github.com/LemJukes/VT-Core/tree/main" class="github-button">View on GitHub</a>
     </div>
 
     <script type="module">
@@ -110,8 +45,7 @@
         function updateDisplays() {
             const now = new Date();
             for (const level of LEVELS) {
-                document.getElementById(level + 'Display').textContent =
-                    'Current Date and Time(' + level + '): ' + format(now, { level, parts: 'both' });
+                document.getElementById(level + 'Display').textContent = format(now, { level, parts: 'both' });
             }
         }
 
@@ -123,7 +57,7 @@
             document.getElementById('utcClock').textContent = `${dateStr} ${timeStr}`;
             requestAnimationFrame(updateClock);
         }
-                
+
         // Initialize Displays and Clock
         updateClock();
         updateDisplays();

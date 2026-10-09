@@ -1,0 +1,376 @@
+<!-- usage.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbatempus - Usage</title>
+    <meta name="description" content="Install and use verbatempus: format a JavaScript Date as an English phrase at four levels of verbosity.">
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Verbatempus - A Clock full of Words</h1>
+        <nav class="site-nav" aria-label="Site">
+            <a href="./" class="nav-link">Home</a>
+            <a href="usage.html" class="nav-link" aria-current="page">Usage</a>
+            <a href="https://www.npmjs.com/package/verbatempus" class="nav-link">npm</a>
+            <a href="https://github.com/LemJukes/VT-Core" class="nav-link">GitHub</a>
+        </nav>
+    </div>
+
+    <main class="doc">
+        <section>
+            <h2>Usage</h2>
+            <p>
+                Verbatempus turns a JavaScript <code>Date</code> into an English phrase you can read or
+                say aloud, at four levels of verbosity. No dependencies; runs in Node and the browser;
+                renders in any IANA time zone.
+            </p>
+            <ul class="toc">
+                <li><a href="#install">Install</a></li>
+                <li><a href="#try">Try it</a></li>
+                <li><a href="#options">Options</a></li>
+                <li><a href="#levels">Levels</a></li>
+                <li><a href="#both">Date and time</a></li>
+                <li><a href="#parts">formatParts</a></li>
+                <li><a href="#max-length">MAX_LENGTH</a></li>
+                <li><a href="#named">Named functions</a></li>
+                <li><a href="#upgrading">Upgrading from 1.0</a></li>
+            </ul>
+        </section>
+
+        <section id="install">
+            <h2>Install</h2>
+<pre><code>npm install verbatempus</code></pre>
+
+            <h3>ES modules</h3>
+<pre><code>import { format } from 'verbatempus';
+
+format(new Date(2024, 9, 24, 10, 24));
+// 'it is twenty four minutes past ten oclock in the morning'
+
+format(new Date(2024, 9, 24, 10, 24), { level: 'terse', parts: 'both' });
+// 'it is thursday at quarter after ten'</code></pre>
+
+            <h3>CommonJS</h3>
+<pre><code>const { format } = require('verbatempus');</code></pre>
+
+            <h3>Plain <code>&lt;script&gt;</code>, no build step</h3>
+            <p>The browser bundle defines a global <code>Verbatempus</code>.</p>
+<pre><code>&lt;script src="https://cdn.jsdelivr.net/npm/verbatempus@2/dist/verbatempus.iife.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  document.body.textContent = Verbatempus.format(new Date(), { level: 'short' });
+&lt;/script&gt;</code></pre>
+            <p class="note">
+                To avoid a third-party request, copy <code>dist/verbatempus.iife.js</code> out of the npm
+                package and serve it yourself. The split-flap display does this.
+            </p>
+        </section>
+
+        <section id="try">
+            <h2>Try it</h2>
+            <p>This runs the library in your browser.</p>
+            <form id="playground" class="controls" autocomplete="off">
+                <label>level
+                    <select name="level">
+                        <option>verbose</option>
+                        <option>lengthy</option>
+                        <option>short</option>
+                        <option>terse</option>
+                    </select>
+                </label>
+                <label>parts
+                    <select name="parts">
+                        <option>time</option>
+                        <option>date</option>
+                        <option>both</option>
+                    </select>
+                </label>
+                <label>case
+                    <select name="case">
+                        <option>lower</option>
+                        <option>upper</option>
+                    </select>
+                </label>
+                <label>charset
+                    <select name="charset">
+                        <option>full</option>
+                        <option>alpha</option>
+                    </select>
+                </label>
+                <label>timeZone
+                    <input name="timeZone" list="zones" placeholder="local time" spellcheck="false">
+                    <datalist id="zones">
+                        <option value="UTC">
+                        <option value="America/New_York">
+                        <option value="America/Los_Angeles">
+                        <option value="Europe/London">
+                        <option value="Asia/Kolkata">
+                        <option value="Australia/Sydney">
+                    </datalist>
+                </label>
+                <label>date and time
+                    <input name="at" type="datetime-local">
+                </label>
+            </form>
+            <div id="result" class="result" aria-live="polite">Loading...</div>
+            <p id="length" class="note"></p>
+<pre><code id="call">format(new Date())</code></pre>
+            <h3>Tokens</h3>
+            <ul id="tokens" class="tokens"></ul>
+        </section>
+
+        <section id="options">
+            <h2>Options</h2>
+<pre><code>format(date?, options?) -&gt; string</code></pre>
+            <p><code>date</code> defaults to now. <code>null</code>, a non-<code>Date</code>, or an invalid <code>Date</code> throws.</p>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>option</th><th>values</th><th>default</th><th></th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><code>level</code></td><td><code>'verbose'</code> <code>'lengthy'</code> <code>'short'</code> <code>'terse'</code></td><td><code>'verbose'</code></td><td></td></tr>
+                        <tr><td><code>parts</code></td><td><code>'time'</code> <code>'date'</code> <code>'both'</code></td><td><code>'time'</code></td><td><code>'both'</code> is one sentence</td></tr>
+                        <tr><td><code>timeZone</code></td><td>an IANA name, e.g. <code>'America/New_York'</code></td><td>local time</td><td>an invalid name throws a <code>RangeError</code></td></tr>
+                        <tr><td><code>case</code></td><td><code>'lower'</code> <code>'upper'</code></td><td><code>'lower'</code></td><td></td></tr>
+                        <tr><td><code>charset</code></td><td><code>'full'</code> <code>'alpha'</code></td><td><code>'full'</code></td><td><code>'alpha'</code> keeps A-Z and spaces only</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Unknown option values throw instead of falling back silently.</p>
+
+            <h3>Time zones</h3>
+<pre><code>const d = new Date('2024-10-24T23:30:00Z');
+
+format(d, { timeZone: 'UTC' });              // 'it is half past eleven oclock in the evening'
+format(d, { timeZone: 'America/New_York' }); // 'it is half past seven oclock in the evening'
+format(d, { timeZone: 'Asia/Kolkata' });     // 'it is five oclock in the morning'</code></pre>
+
+            <h3>Case and charset</h3>
+            <p>For displays that can only show capital letters, such as a split-flap board:</p>
+<pre><code>format(d, { level: 'verbose', parts: 'both', case: 'upper', charset: 'alpha' });
+// 'IT IS THURSDAY OCTOBER THE TWENTY FOURTH TWENTY TWENTY FOUR AND IT IS TWENTY FOUR
+//  MINUTES PAST TEN OCLOCK IN THE MORNING'</code></pre>
+        </section>
+
+        <section id="levels">
+            <h2>Levels</h2>
+            <p id="levels-caption" class="note">Thursday 24 October 2024, 10:24.</p>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>level</th><th>time</th><th>date</th></tr>
+                    </thead>
+                    <tbody id="levels-body">
+                        <tr><td><code>verbose</code></td><td>it is twenty four minutes past ten oclock in the morning</td><td>it is thursday october the twenty fourth twenty twenty four</td></tr>
+                        <tr><td><code>lengthy</code></td><td>it is twenty four past ten in the morning</td><td>it is thursday october twenty fourth</td></tr>
+                        <tr><td><code>short</code></td><td>it is almost half past ten am</td><td>it is thursday the twenty fourth</td></tr>
+                        <tr><td><code>terse</code></td><td>its quarter after ten</td><td>it is thursday</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <ul>
+                <li><code>after</code> for minutes 1-10, <code>past</code> for 11-44, then counting down <code>to</code> the next hour.</li>
+                <li>Verbose and lengthy say <code>a quarter past</code> and <code>a quarter to</code>; <code>till</code> appears only toward midnight or noon.</li>
+                <li><code>midnight</code> and <code>noon</code> never take <code>oclock</code>, a time-of-day suffix, or am/pm.</li>
+                <li>Short rounds to landmarks (<code>almost</code>, <code>just about</code>); terse uses six wide bands.</li>
+            </ul>
+            <p class="note">Every phrase at every level, for all 1440 minutes of the day, is checked against a golden fixture in the test suite.</p>
+        </section>
+
+        <section id="both">
+            <h2>Date and time</h2>
+            <p>
+                <code>parts: 'both'</code> is one sentence: the date, a joiner, then the time without its own
+                <code>it is</code>. Verbose joins with <code>, and it is</code>; the other levels join with <code>at</code>.
+            </p>
+<pre><code>format(d, { level: 'verbose', parts: 'both' });
+// 'it is thursday october the twenty fourth twenty twenty four, and it is
+//  twenty four minutes past ten oclock in the morning'
+
+format(d, { level: 'lengthy', parts: 'both' });
+// 'it is thursday october twenty fourth at twenty four past ten in the morning'</code></pre>
+        </section>
+
+        <section id="parts">
+            <h2>formatParts</h2>
+            <p>Same arguments, structured result. Use it when a display needs to lay words out itself.</p>
+<pre><code>formatParts(new Date(2024, 9, 24, 10, 24), { level: 'short' });
+// {
+//   text: 'it is almost half past ten am',
+//   tokens: [
+//     { type: 'lead',   value: 'it is' },
+//     { type: 'rel',    value: 'almost' },
+//     { type: 'minute', value: 'half' },
+//     { type: 'rel',    value: 'past' },
+//     { type: 'hour',   value: 'ten' },
+//     { type: 'suffix', value: 'am' },
+//   ],
+//   level: 'short',
+//   parts: 'time',
+//   maxLength: 39
+// }</code></pre>
+            <p>
+                Token types: <code>lead</code>, <code>minute</code>, <code>rel</code>, <code>hour</code>,
+                <code>oclock</code>, <code>suffix</code>, <code>weekday</code>, <code>month</code>,
+                <code>day</code>, <code>year</code>, <code>join</code>. <code>text</code> is always the
+                tokens read in order, after <code>case</code> and <code>charset</code>.
+            </p>
+        </section>
+
+        <section id="max-length">
+            <h2>MAX_LENGTH</h2>
+            <p>The longest phrase, in characters, for each level and <code>parts</code>. Fixed-size displays should size themselves from it.</p>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>level</th><th>time</th><th>date</th><th>both</th></tr>
+                    </thead>
+                    <tbody id="max-length-body">
+                        <tr><td><code>verbose</code></td><td>61</td><td>65</td><td>132</td></tr>
+                        <tr><td><code>lengthy</code></td><td>46</td><td>40</td><td>84</td></tr>
+                        <tr><td><code>short</code></td><td>39</td><td>34</td><td>71</td></tr>
+                        <tr><td><code>terse</code></td><td>26</td><td>15</td><td>41</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="note">Time covers all 1440 minutes; date covers every calendar day from 2010 to 2099.</p>
+        </section>
+
+        <section id="named">
+            <h2>Named functions</h2>
+            <p>
+                Thin wrappers over <code>format</code>. <code>level</code> and <code>parts</code> are fixed;
+                <code>timeZone</code>, <code>case</code> and <code>charset</code> pass through as the second argument.
+            </p>
+<pre><code>verboseTime     lengthyTime     shortTime     terseTime
+verboseDate     lengthyDate     shortDate     terseDate
+verboseDateTime lengthyDateTime shortDateTime terseDateTime
+
+shortDate(new Date(2024, 9, 24));  // 'it is thursday the twenty fourth'</code></pre>
+        </section>
+
+        <section id="upgrading">
+            <h2>Upgrading from 1.0</h2>
+            <ul>
+                <li>The eight <code>getVerboseTime()</code>-style functions are removed. <code>verboseTime()</code> already defaults to now.</li>
+                <li>Import from <code>'verbatempus'</code>, not <code>src/verbatempus.js</code>.</li>
+                <li>Several 1.0 phrasing bugs are fixed, e.g. <code>shortTime</code> at 23:45 said <code>quarter to noon am</code>; it now says <code>quarter to midnight</code>.</li>
+                <li>New: <code>format</code>, <code>formatParts</code>, date-and-time output, <code>timeZone</code>, <code>case</code>, <code>charset</code>, <code>MAX_LENGTH</code>.</li>
+            </ul>
+        </section>
+    </main>
+
+    <div class="footer">
+        <p>by Juke LTD.</p>
+    </div>
+
+    <script type="module">
+        import { format, formatParts, MAX_LENGTH } from './src/index.js';
+
+        const LEVELS = ['verbose', 'lengthy', 'short', 'terse'];
+        const DEFAULTS = { level: 'verbose', parts: 'time', case: 'lower', charset: 'full' };
+        const form = document.getElementById('playground');
+
+        function cell(text, asCode) {
+            const td = document.createElement('td');
+            if (asCode) {
+                const code = document.createElement('code');
+                code.textContent = text;
+                td.appendChild(code);
+            } else {
+                td.textContent = text;
+            }
+            return td;
+        }
+
+        // Levels table, live for the current minute
+        function renderLevels() {
+            const now = new Date();
+            const rows = LEVELS.map((level) => {
+                const tr = document.createElement('tr');
+                tr.append(
+                    cell(level, true),
+                    cell(format(now, { level })),
+                    cell(format(now, { level, parts: 'date' }))
+                );
+                return tr;
+            });
+            document.getElementById('levels-body').replaceChildren(...rows);
+            document.getElementById('levels-caption').textContent =
+                'Right now, ' + now.toLocaleString(undefined, { dateStyle: 'full', timeStyle: 'short' }) + '.';
+        }
+
+        // MAX_LENGTH table straight from the library
+        function renderMaxLength() {
+            const rows = LEVELS.map((level) => {
+                const tr = document.createElement('tr');
+                const max = MAX_LENGTH[level];
+                tr.append(cell(level, true), cell(String(max.time)), cell(String(max.date)), cell(String(max.both)));
+                return tr;
+            });
+            document.getElementById('max-length-body').replaceChildren(...rows);
+        }
+
+        function quote(value) {
+            return "'" + value.replace(/\\/g, '\\\\').replace(/'/g, "\\'") + "'";
+        }
+
+        function renderPlayground() {
+            const data = new FormData(form);
+            const options = {};
+            for (const key of Object.keys(DEFAULTS)) {
+                if (data.get(key) !== DEFAULTS[key]) options[key] = data.get(key);
+            }
+            const timeZone = data.get('timeZone').trim();
+            if (timeZone) options.timeZone = timeZone;
+
+            const at = data.get('at');
+            const date = at ? new Date(at) : new Date();
+            const dateCode = at ? 'new Date(' + quote(at) + ')' : 'new Date()';
+            const optionsCode = Object.keys(options).length
+                ? ', { ' + Object.entries(options).map(([k, v]) => k + ': ' + quote(v)).join(', ') + ' }'
+                : '';
+            document.getElementById('call').textContent = 'format(' + dateCode + optionsCode + ')';
+
+            const result = document.getElementById('result');
+            const tokenList = document.getElementById('tokens');
+            const length = document.getElementById('length');
+            try {
+                const parts = formatParts(date, options);
+                result.textContent = parts.text;
+                result.classList.remove('error');
+                length.textContent = parts.text.length + ' characters; the longest ' + parts.level +
+                    ' ' + parts.parts + ' phrase is ' + parts.maxLength + '.';
+                tokenList.replaceChildren(...parts.tokens.map((token) => {
+                    const li = document.createElement('li');
+                    const type = document.createElement('span');
+                    type.textContent = token.type + ' ';
+                    li.append(type, token.value);
+                    return li;
+                }));
+            } catch (error) {
+                result.textContent = error.message;
+                result.classList.add('error');
+                length.textContent = '';
+                tokenList.replaceChildren();
+            }
+        }
+
+        form.addEventListener('input', renderPlayground);
+        form.addEventListener('submit', (event) => event.preventDefault());
+
+        renderMaxLength();
+        renderLevels();
+        renderPlayground();
+
+        // keep the live parts current
+        setInterval(() => {
+            renderLevels();
+            if (!form.elements.at.value) renderPlayground();
+        }, 1000);
+    </script>
+</body>
+</html>
