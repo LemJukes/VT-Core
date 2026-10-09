@@ -1,6 +1,6 @@
 {
   "name": "verbatempus",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Turns a JavaScript Date into a natural-language phrase at four levels of verbosity. Zero dependencies. English only (for now).",
   "type": "module",
   "main": "./dist/verbatempus.cjs",
