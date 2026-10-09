@@ -56,7 +56,7 @@
    "verbose": "it is six minutes after midnight",
    "lengthy": "it is six after midnight",
    "short": "it is almost ten past midnight",
-   "terse": "its after midnight"
+   "terse": "its a bit after midnight"
   },
   {
    "h": 0,
@@ -64,7 +64,7 @@
    "verbose": "it is seven minutes after midnight",
    "lengthy": "it is seven after midnight",
    "short": "it is almost ten past midnight",
-   "terse": "its after midnight"
+   "terse": "its a bit after midnight"
   },
   {
    "h": 0,
@@ -72,7 +72,7 @@
    "verbose": "it is eight minutes after midnight",
    "lengthy": "it is eight after midnight",
    "short": "it is almost ten past midnight",
-   "terse": "its after midnight"
+   "terse": "its a bit after midnight"
   },
   {
    "h": 0,
@@ -80,7 +80,7 @@
    "verbose": "it is nine minutes after midnight",
    "lengthy": "it is nine after midnight",
    "short": "it is just about ten past midnight",
-   "terse": "its after midnight"
+   "terse": "its a bit after midnight"
   },
   {
    "h": 0,
@@ -88,7 +88,7 @@
    "verbose": "it is ten minutes after midnight",
    "lengthy": "it is ten after midnight",
    "short": "it is ten past midnight",
-   "terse": "its after midnight"
+   "terse": "its a bit after midnight"
   },
   {
    "h": 0,
@@ -96,7 +96,7 @@
    "verbose": "it is eleven minutes past midnight",
    "lengthy": "it is eleven past midnight",
    "short": "it is almost quarter past midnight",
-   "terse": "its after midnight"
+   "terse": "its a bit after midnight"
   },
   {
    "h": 0,
@@ -104,7 +104,7 @@
    "verbose": "it is twelve minutes past midnight",
    "lengthy": "it is twelve past midnight",
    "short": "it is almost quarter past midnight",
-   "terse": "its after midnight"
+   "terse": "its a bit after midnight"
   },
   {
    "h": 0,
@@ -112,7 +112,7 @@
    "verbose": "it is thirteen minutes past midnight",
    "lengthy": "it is thirteen past midnight",
    "short": "it is almost quarter past midnight",
-   "terse": "its after midnight"
+   "terse": "its a bit after midnight"
   },
   {
    "h": 0,
@@ -120,7 +120,7 @@
    "verbose": "it is fourteen minutes past midnight",
    "lengthy": "it is fourteen past midnight",
    "short": "it is just about quarter past midnight",
-   "terse": "its after midnight"
+   "terse": "its a bit after midnight"
   },
   {
    "h": 0,
@@ -536,7 +536,7 @@
    "verbose": "it is six minutes after one oclock in the morning",
    "lengthy": "it is six after one in the morning",
    "short": "it is almost ten past one am",
-   "terse": "its after one"
+   "terse": "its a bit after one"
   },
   {
    "h": 1,
@@ -544,7 +544,7 @@
    "verbose": "it is seven minutes after one oclock in the morning",
    "lengthy": "it is seven after one in the morning",
    "short": "it is almost ten past one am",
-   "terse": "its after one"
+   "terse": "its a bit after one"
   },
   {
    "h": 1,
@@ -552,7 +552,7 @@
    "verbose": "it is eight minutes after one oclock in the morning",
    "lengthy": "it is eight after one in the morning",
    "short": "it is almost ten past one am",
-   "terse": "its after one"
+   "terse": "its a bit after one"
   },
   {
    "h": 1,
@@ -560,7 +560,7 @@
    "verbose": "it is nine minutes after one oclock in the morning",
    "lengthy": "it is nine after one in the morning",
    "short": "it is just about ten past one am",
-   "terse": "its after one"
+   "terse": "its a bit after one"
   },
   {
    "h": 1,
@@ -568,7 +568,7 @@
    "verbose": "it is ten minutes after one oclock in the morning",
    "lengthy": "it is ten after one in the morning",
    "short": "it is ten past one am",
-   "terse": "its after one"
+   "terse": "its a bit after one"
   },
   {
    "h": 1,
@@ -576,7 +576,7 @@
    "verbose": "it is eleven minutes past one oclock in the morning",
    "lengthy": "it is eleven past one in the morning",
    "short": "it is almost quarter past one am",
-   "terse": "its after one"
+   "terse": "its a bit after one"
   },
   {
    "h": 1,
@@ -584,7 +584,7 @@
    "verbose": "it is twelve minutes past one oclock in the morning",
    "lengthy": "it is twelve past one in the morning",
    "short": "it is almost quarter past one am",
-   "terse": "its after one"
+   "terse": "its a bit after one"
   },
   {
    "h": 1,
@@ -592,7 +592,7 @@
    "verbose": "it is thirteen minutes past one oclock in the morning",
    "lengthy": "it is thirteen past one in the morning",
    "short": "it is almost quarter past one am",
-   "terse": "its after one"
+   "terse": "its a bit after one"
   },
   {
    "h": 1,
@@ -600,7 +600,7 @@
    "verbose": "it is fourteen minutes past one oclock in the morning",
    "lengthy": "it is fourteen past one in the morning",
    "short": "it is just about quarter past one am",
-   "terse": "its after one"
+   "terse": "its a bit after one"
   },
   {
    "h": 1,
@@ -1016,7 +1016,7 @@
    "verbose": "it is six minutes after two oclock in the morning",
    "lengthy": "it is six after two in the morning",
    "short": "it is almost ten past two am",
-   "terse": "its after two"
+   "terse": "its a bit after two"
   },
   {
    "h": 2,
@@ -1024,7 +1024,7 @@
    "verbose": "it is seven minutes after two oclock in the morning",
    "lengthy": "it is seven after two in the morning",
    "short": "it is almost ten past two am",
-   "terse": "its after two"
+   "terse": "its a bit after two"
   },
   {
    "h": 2,
@@ -1032,7 +1032,7 @@
    "verbose": "it is eight minutes after two oclock in the morning",
    "lengthy": "it is eight after two in the morning",
    "short": "it is almost ten past two am",
-   "terse": "its after two"
+   "terse": "its a bit after two"
   },
   {
    "h": 2,
@@ -1040,7 +1040,7 @@
    "verbose": "it is nine minutes after two oclock in the morning",
    "lengthy": "it is nine after two in the morning",
    "short": "it is just about ten past two am",
-   "terse": "its after two"
+   "terse": "its a bit after two"
   },
   {
    "h": 2,
@@ -1048,7 +1048,7 @@
    "verbose": "it is ten minutes after two oclock in the morning",
    "lengthy": "it is ten after two in the morning",
    "short": "it is ten past two am",
-   "terse": "its after two"
+   "terse": "its a bit after two"
   },
   {
    "h": 2,
@@ -1056,7 +1056,7 @@
    "verbose": "it is eleven minutes past two oclock in the morning",
    "lengthy": "it is eleven past two in the morning",
    "short": "it is almost quarter past two am",
-   "terse": "its after two"
+   "terse": "its a bit after two"
   },
   {
    "h": 2,
@@ -1064,7 +1064,7 @@
    "verbose": "it is twelve minutes past two oclock in the morning",
    "lengthy": "it is twelve past two in the morning",
    "short": "it is almost quarter past two am",
-   "terse": "its after two"
+   "terse": "its a bit after two"
   },
   {
    "h": 2,
@@ -1072,7 +1072,7 @@
    "verbose": "it is thirteen minutes past two oclock in the morning",
    "lengthy": "it is thirteen past two in the morning",
    "short": "it is almost quarter past two am",
-   "terse": "its after two"
+   "terse": "its a bit after two"
   },
   {
    "h": 2,
@@ -1080,7 +1080,7 @@
    "verbose": "it is fourteen minutes past two oclock in the morning",
    "lengthy": "it is fourteen past two in the morning",
    "short": "it is just about quarter past two am",
-   "terse": "its after two"
+   "terse": "its a bit after two"
   },
   {
    "h": 2,
@@ -1496,7 +1496,7 @@
    "verbose": "it is six minutes after three oclock in the morning",
    "lengthy": "it is six after three in the morning",
    "short": "it is almost ten past three am",
-   "terse": "its after three"
+   "terse": "its a bit after three"
   },
   {
    "h": 3,
@@ -1504,7 +1504,7 @@
    "verbose": "it is seven minutes after three oclock in the morning",
    "lengthy": "it is seven after three in the morning",
    "short": "it is almost ten past three am",
-   "terse": "its after three"
+   "terse": "its a bit after three"
   },
   {
    "h": 3,
@@ -1512,7 +1512,7 @@
    "verbose": "it is eight minutes after three oclock in the morning",
    "lengthy": "it is eight after three in the morning",
    "short": "it is almost ten past three am",
-   "terse": "its after three"
+   "terse": "its a bit after three"
   },
   {
    "h": 3,
@@ -1520,7 +1520,7 @@
    "verbose": "it is nine minutes after three oclock in the morning",
    "lengthy": "it is nine after three in the morning",
    "short": "it is just about ten past three am",
-   "terse": "its after three"
+   "terse": "its a bit after three"
   },
   {
    "h": 3,
@@ -1528,7 +1528,7 @@
    "verbose": "it is ten minutes after three oclock in the morning",
    "lengthy": "it is ten after three in the morning",
    "short": "it is ten past three am",
-   "terse": "its after three"
+   "terse": "its a bit after three"
   },
   {
    "h": 3,
@@ -1536,7 +1536,7 @@
    "verbose": "it is eleven minutes past three oclock in the morning",
    "lengthy": "it is eleven past three in the morning",
    "short": "it is almost quarter past three am",
-   "terse": "its after three"
+   "terse": "its a bit after three"
   },
   {
    "h": 3,
@@ -1544,7 +1544,7 @@
    "verbose": "it is twelve minutes past three oclock in the morning",
    "lengthy": "it is twelve past three in the morning",
    "short": "it is almost quarter past three am",
-   "terse": "its after three"
+   "terse": "its a bit after three"
   },
   {
    "h": 3,
@@ -1552,7 +1552,7 @@
    "verbose": "it is thirteen minutes past three oclock in the morning",
    "lengthy": "it is thirteen past three in the morning",
    "short": "it is almost quarter past three am",
-   "terse": "its after three"
+   "terse": "its a bit after three"
   },
   {
    "h": 3,
@@ -1560,7 +1560,7 @@
    "verbose": "it is fourteen minutes past three oclock in the morning",
    "lengthy": "it is fourteen past three in the morning",
    "short": "it is just about quarter past three am",
-   "terse": "its after three"
+   "terse": "its a bit after three"
   },
   {
    "h": 3,
@@ -1976,7 +1976,7 @@
    "verbose": "it is six minutes after four oclock in the morning",
    "lengthy": "it is six after four in the morning",
    "short": "it is almost ten past four am",
-   "terse": "its after four"
+   "terse": "its a bit after four"
   },
   {
    "h": 4,
@@ -1984,7 +1984,7 @@
    "verbose": "it is seven minutes after four oclock in the morning",
    "lengthy": "it is seven after four in the morning",
    "short": "it is almost ten past four am",
-   "terse": "its after four"
+   "terse": "its a bit after four"
   },
   {
    "h": 4,
@@ -1992,7 +1992,7 @@
    "verbose": "it is eight minutes after four oclock in the morning",
    "lengthy": "it is eight after four in the morning",
    "short": "it is almost ten past four am",
-   "terse": "its after four"
+   "terse": "its a bit after four"
   },
   {
    "h": 4,
@@ -2000,7 +2000,7 @@
    "verbose": "it is nine minutes after four oclock in the morning",
    "lengthy": "it is nine after four in the morning",
    "short": "it is just about ten past four am",
-   "terse": "its after four"
+   "terse": "its a bit after four"
   },
   {
    "h": 4,
@@ -2008,7 +2008,7 @@
    "verbose": "it is ten minutes after four oclock in the morning",
    "lengthy": "it is ten after four in the morning",
    "short": "it is ten past four am",
-   "terse": "its after four"
+   "terse": "its a bit after four"
   },
   {
    "h": 4,
@@ -2016,7 +2016,7 @@
    "verbose": "it is eleven minutes past four oclock in the morning",
    "lengthy": "it is eleven past four in the morning",
    "short": "it is almost quarter past four am",
-   "terse": "its after four"
+   "terse": "its a bit after four"
   },
   {
    "h": 4,
@@ -2024,7 +2024,7 @@
    "verbose": "it is twelve minutes past four oclock in the morning",
    "lengthy": "it is twelve past four in the morning",
    "short": "it is almost quarter past four am",
-   "terse": "its after four"
+   "terse": "its a bit after four"
   },
   {
    "h": 4,
@@ -2032,7 +2032,7 @@
    "verbose": "it is thirteen minutes past four oclock in the morning",
    "lengthy": "it is thirteen past four in the morning",
    "short": "it is almost quarter past four am",
-   "terse": "its after four"
+   "terse": "its a bit after four"
   },
   {
    "h": 4,
@@ -2040,7 +2040,7 @@
    "verbose": "it is fourteen minutes past four oclock in the morning",
    "lengthy": "it is fourteen past four in the morning",
    "short": "it is just about quarter past four am",
-   "terse": "its after four"
+   "terse": "its a bit after four"
   },
   {
    "h": 4,
@@ -2456,7 +2456,7 @@
    "verbose": "it is six minutes after five oclock in the morning",
    "lengthy": "it is six after five in the morning",
    "short": "it is almost ten past five am",
-   "terse": "its after five"
+   "terse": "its a bit after five"
   },
   {
    "h": 5,
@@ -2464,7 +2464,7 @@
    "verbose": "it is seven minutes after five oclock in the morning",
    "lengthy": "it is seven after five in the morning",
    "short": "it is almost ten past five am",
-   "terse": "its after five"
+   "terse": "its a bit after five"
   },
   {
    "h": 5,
@@ -2472,7 +2472,7 @@
    "verbose": "it is eight minutes after five oclock in the morning",
    "lengthy": "it is eight after five in the morning",
    "short": "it is almost ten past five am",
-   "terse": "its after five"
+   "terse": "its a bit after five"
   },
   {
    "h": 5,
@@ -2480,7 +2480,7 @@
    "verbose": "it is nine minutes after five oclock in the morning",
    "lengthy": "it is nine after five in the morning",
    "short": "it is just about ten past five am",
-   "terse": "its after five"
+   "terse": "its a bit after five"
   },
   {
    "h": 5,
@@ -2488,7 +2488,7 @@
    "verbose": "it is ten minutes after five oclock in the morning",
    "lengthy": "it is ten after five in the morning",
    "short": "it is ten past five am",
-   "terse": "its after five"
+   "terse": "its a bit after five"
   },
   {
    "h": 5,
@@ -2496,7 +2496,7 @@
    "verbose": "it is eleven minutes past five oclock in the morning",
    "lengthy": "it is eleven past five in the morning",
    "short": "it is almost quarter past five am",
-   "terse": "its after five"
+   "terse": "its a bit after five"
   },
   {
    "h": 5,
@@ -2504,7 +2504,7 @@
    "verbose": "it is twelve minutes past five oclock in the morning",
    "lengthy": "it is twelve past five in the morning",
    "short": "it is almost quarter past five am",
-   "terse": "its after five"
+   "terse": "its a bit after five"
   },
   {
    "h": 5,
@@ -2512,7 +2512,7 @@
    "verbose": "it is thirteen minutes past five oclock in the morning",
    "lengthy": "it is thirteen past five in the morning",
    "short": "it is almost quarter past five am",
-   "terse": "its after five"
+   "terse": "its a bit after five"
   },
   {
    "h": 5,
@@ -2520,7 +2520,7 @@
    "verbose": "it is fourteen minutes past five oclock in the morning",
    "lengthy": "it is fourteen past five in the morning",
    "short": "it is just about quarter past five am",
-   "terse": "its after five"
+   "terse": "its a bit after five"
   },
   {
    "h": 5,
@@ -2936,7 +2936,7 @@
    "verbose": "it is six minutes after six oclock in the morning",
    "lengthy": "it is six after six in the morning",
    "short": "it is almost ten past six am",
-   "terse": "its after six"
+   "terse": "its a bit after six"
   },
   {
    "h": 6,
@@ -2944,7 +2944,7 @@
    "verbose": "it is seven minutes after six oclock in the morning",
    "lengthy": "it is seven after six in the morning",
    "short": "it is almost ten past six am",
-   "terse": "its after six"
+   "terse": "its a bit after six"
   },
   {
    "h": 6,
@@ -2952,7 +2952,7 @@
    "verbose": "it is eight minutes after six oclock in the morning",
    "lengthy": "it is eight after six in the morning",
    "short": "it is almost ten past six am",
-   "terse": "its after six"
+   "terse": "its a bit after six"
   },
   {
    "h": 6,
@@ -2960,7 +2960,7 @@
    "verbose": "it is nine minutes after six oclock in the morning",
    "lengthy": "it is nine after six in the morning",
    "short": "it is just about ten past six am",
-   "terse": "its after six"
+   "terse": "its a bit after six"
   },
   {
    "h": 6,
@@ -2968,7 +2968,7 @@
    "verbose": "it is ten minutes after six oclock in the morning",
    "lengthy": "it is ten after six in the morning",
    "short": "it is ten past six am",
-   "terse": "its after six"
+   "terse": "its a bit after six"
   },
   {
    "h": 6,
@@ -2976,7 +2976,7 @@
    "verbose": "it is eleven minutes past six oclock in the morning",
    "lengthy": "it is eleven past six in the morning",
    "short": "it is almost quarter past six am",
-   "terse": "its after six"
+   "terse": "its a bit after six"
   },
   {
    "h": 6,
@@ -2984,7 +2984,7 @@
    "verbose": "it is twelve minutes past six oclock in the morning",
    "lengthy": "it is twelve past six in the morning",
    "short": "it is almost quarter past six am",
-   "terse": "its after six"
+   "terse": "its a bit after six"
   },
   {
    "h": 6,
@@ -2992,7 +2992,7 @@
    "verbose": "it is thirteen minutes past six oclock in the morning",
    "lengthy": "it is thirteen past six in the morning",
    "short": "it is almost quarter past six am",
-   "terse": "its after six"
+   "terse": "its a bit after six"
   },
   {
    "h": 6,
@@ -3000,7 +3000,7 @@
    "verbose": "it is fourteen minutes past six oclock in the morning",
    "lengthy": "it is fourteen past six in the morning",
    "short": "it is just about quarter past six am",
-   "terse": "its after six"
+   "terse": "its a bit after six"
   },
   {
    "h": 6,
@@ -3416,7 +3416,7 @@
    "verbose": "it is six minutes after seven oclock in the morning",
    "lengthy": "it is six after seven in the morning",
    "short": "it is almost ten past seven am",
-   "terse": "its after seven"
+   "terse": "its a bit after seven"
   },
   {
    "h": 7,
@@ -3424,7 +3424,7 @@
    "verbose": "it is seven minutes after seven oclock in the morning",
    "lengthy": "it is seven after seven in the morning",
    "short": "it is almost ten past seven am",
-   "terse": "its after seven"
+   "terse": "its a bit after seven"
   },
   {
    "h": 7,
@@ -3432,7 +3432,7 @@
    "verbose": "it is eight minutes after seven oclock in the morning",
    "lengthy": "it is eight after seven in the morning",
    "short": "it is almost ten past seven am",
-   "terse": "its after seven"
+   "terse": "its a bit after seven"
   },
   {
    "h": 7,
@@ -3440,7 +3440,7 @@
    "verbose": "it is nine minutes after seven oclock in the morning",
    "lengthy": "it is nine after seven in the morning",
    "short": "it is just about ten past seven am",
-   "terse": "its after seven"
+   "terse": "its a bit after seven"
   },
   {
    "h": 7,
@@ -3448,7 +3448,7 @@
    "verbose": "it is ten minutes after seven oclock in the morning",
    "lengthy": "it is ten after seven in the morning",
    "short": "it is ten past seven am",
-   "terse": "its after seven"
+   "terse": "its a bit after seven"
   },
   {
    "h": 7,
@@ -3456,7 +3456,7 @@
    "verbose": "it is eleven minutes past seven oclock in the morning",
    "lengthy": "it is eleven past seven in the morning",
    "short": "it is almost quarter past seven am",
-   "terse": "its after seven"
+   "terse": "its a bit after seven"
   },
   {
    "h": 7,
@@ -3464,7 +3464,7 @@
    "verbose": "it is twelve minutes past seven oclock in the morning",
    "lengthy": "it is twelve past seven in the morning",
    "short": "it is almost quarter past seven am",
-   "terse": "its after seven"
+   "terse": "its a bit after seven"
   },
   {
    "h": 7,
@@ -3472,7 +3472,7 @@
    "verbose": "it is thirteen minutes past seven oclock in the morning",
    "lengthy": "it is thirteen past seven in the morning",
    "short": "it is almost quarter past seven am",
-   "terse": "its after seven"
+   "terse": "its a bit after seven"
   },
   {
    "h": 7,
@@ -3480,7 +3480,7 @@
    "verbose": "it is fourteen minutes past seven oclock in the morning",
    "lengthy": "it is fourteen past seven in the morning",
    "short": "it is just about quarter past seven am",
-   "terse": "its after seven"
+   "terse": "its a bit after seven"
   },
   {
    "h": 7,
@@ -3896,7 +3896,7 @@
    "verbose": "it is six minutes after eight oclock in the morning",
    "lengthy": "it is six after eight in the morning",
    "short": "it is almost ten past eight am",
-   "terse": "its after eight"
+   "terse": "its a bit after eight"
   },
   {
    "h": 8,
@@ -3904,7 +3904,7 @@
    "verbose": "it is seven minutes after eight oclock in the morning",
    "lengthy": "it is seven after eight in the morning",
    "short": "it is almost ten past eight am",
-   "terse": "its after eight"
+   "terse": "its a bit after eight"
   },
   {
    "h": 8,
@@ -3912,7 +3912,7 @@
    "verbose": "it is eight minutes after eight oclock in the morning",
    "lengthy": "it is eight after eight in the morning",
    "short": "it is almost ten past eight am",
-   "terse": "its after eight"
+   "terse": "its a bit after eight"
   },
   {
    "h": 8,
@@ -3920,7 +3920,7 @@
    "verbose": "it is nine minutes after eight oclock in the morning",
    "lengthy": "it is nine after eight in the morning",
    "short": "it is just about ten past eight am",
-   "terse": "its after eight"
+   "terse": "its a bit after eight"
   },
   {
    "h": 8,
@@ -3928,7 +3928,7 @@
    "verbose": "it is ten minutes after eight oclock in the morning",
    "lengthy": "it is ten after eight in the morning",
    "short": "it is ten past eight am",
-   "terse": "its after eight"
+   "terse": "its a bit after eight"
   },
   {
    "h": 8,
@@ -3936,7 +3936,7 @@
    "verbose": "it is eleven minutes past eight oclock in the morning",
    "lengthy": "it is eleven past eight in the morning",
    "short": "it is almost quarter past eight am",
-   "terse": "its after eight"
+   "terse": "its a bit after eight"
   },
   {
    "h": 8,
@@ -3944,7 +3944,7 @@
    "verbose": "it is twelve minutes past eight oclock in the morning",
    "lengthy": "it is twelve past eight in the morning",
    "short": "it is almost quarter past eight am",
-   "terse": "its after eight"
+   "terse": "its a bit after eight"
   },
   {
    "h": 8,
@@ -3952,7 +3952,7 @@
    "verbose": "it is thirteen minutes past eight oclock in the morning",
    "lengthy": "it is thirteen past eight in the morning",
    "short": "it is almost quarter past eight am",
-   "terse": "its after eight"
+   "terse": "its a bit after eight"
   },
   {
    "h": 8,
@@ -3960,7 +3960,7 @@
    "verbose": "it is fourteen minutes past eight oclock in the morning",
    "lengthy": "it is fourteen past eight in the morning",
    "short": "it is just about quarter past eight am",
-   "terse": "its after eight"
+   "terse": "its a bit after eight"
   },
   {
    "h": 8,
@@ -4376,7 +4376,7 @@
    "verbose": "it is six minutes after nine oclock in the morning",
    "lengthy": "it is six after nine in the morning",
    "short": "it is almost ten past nine am",
-   "terse": "its after nine"
+   "terse": "its a bit after nine"
   },
   {
    "h": 9,
@@ -4384,7 +4384,7 @@
    "verbose": "it is seven minutes after nine oclock in the morning",
    "lengthy": "it is seven after nine in the morning",
    "short": "it is almost ten past nine am",
-   "terse": "its after nine"
+   "terse": "its a bit after nine"
   },
   {
    "h": 9,
@@ -4392,7 +4392,7 @@
    "verbose": "it is eight minutes after nine oclock in the morning",
    "lengthy": "it is eight after nine in the morning",
    "short": "it is almost ten past nine am",
-   "terse": "its after nine"
+   "terse": "its a bit after nine"
   },
   {
    "h": 9,
@@ -4400,7 +4400,7 @@
    "verbose": "it is nine minutes after nine oclock in the morning",
    "lengthy": "it is nine after nine in the morning",
    "short": "it is just about ten past nine am",
-   "terse": "its after nine"
+   "terse": "its a bit after nine"
   },
   {
    "h": 9,
@@ -4408,7 +4408,7 @@
    "verbose": "it is ten minutes after nine oclock in the morning",
    "lengthy": "it is ten after nine in the morning",
    "short": "it is ten past nine am",
-   "terse": "its after nine"
+   "terse": "its a bit after nine"
   },
   {
    "h": 9,
@@ -4416,7 +4416,7 @@
    "verbose": "it is eleven minutes past nine oclock in the morning",
    "lengthy": "it is eleven past nine in the morning",
    "short": "it is almost quarter past nine am",
-   "terse": "its after nine"
+   "terse": "its a bit after nine"
   },
   {
    "h": 9,
@@ -4424,7 +4424,7 @@
    "verbose": "it is twelve minutes past nine oclock in the morning",
    "lengthy": "it is twelve past nine in the morning",
    "short": "it is almost quarter past nine am",
-   "terse": "its after nine"
+   "terse": "its a bit after nine"
   },
   {
    "h": 9,
@@ -4432,7 +4432,7 @@
    "verbose": "it is thirteen minutes past nine oclock in the morning",
    "lengthy": "it is thirteen past nine in the morning",
    "short": "it is almost quarter past nine am",
-   "terse": "its after nine"
+   "terse": "its a bit after nine"
   },
   {
    "h": 9,
@@ -4440,7 +4440,7 @@
    "verbose": "it is fourteen minutes past nine oclock in the morning",
    "lengthy": "it is fourteen past nine in the morning",
    "short": "it is just about quarter past nine am",
-   "terse": "its after nine"
+   "terse": "its a bit after nine"
   },
   {
    "h": 9,
@@ -4856,7 +4856,7 @@
    "verbose": "it is six minutes after ten oclock in the morning",
    "lengthy": "it is six after ten in the morning",
    "short": "it is almost ten past ten am",
-   "terse": "its after ten"
+   "terse": "its a bit after ten"
   },
   {
    "h": 10,
@@ -4864,7 +4864,7 @@
    "verbose": "it is seven minutes after ten oclock in the morning",
    "lengthy": "it is seven after ten in the morning",
    "short": "it is almost ten past ten am",
-   "terse": "its after ten"
+   "terse": "its a bit after ten"
   },
   {
    "h": 10,
@@ -4872,7 +4872,7 @@
    "verbose": "it is eight minutes after ten oclock in the morning",
    "lengthy": "it is eight after ten in the morning",
    "short": "it is almost ten past ten am",
-   "terse": "its after ten"
+   "terse": "its a bit after ten"
   },
   {
    "h": 10,
@@ -4880,7 +4880,7 @@
    "verbose": "it is nine minutes after ten oclock in the morning",
    "lengthy": "it is nine after ten in the morning",
    "short": "it is just about ten past ten am",
-   "terse": "its after ten"
+   "terse": "its a bit after ten"
   },
   {
    "h": 10,
@@ -4888,7 +4888,7 @@
    "verbose": "it is ten minutes after ten oclock in the morning",
    "lengthy": "it is ten after ten in the morning",
    "short": "it is ten past ten am",
-   "terse": "its after ten"
+   "terse": "its a bit after ten"
   },
   {
    "h": 10,
@@ -4896,7 +4896,7 @@
    "verbose": "it is eleven minutes past ten oclock in the morning",
    "lengthy": "it is eleven past ten in the morning",
    "short": "it is almost quarter past ten am",
-   "terse": "its after ten"
+   "terse": "its a bit after ten"
   },
   {
    "h": 10,
@@ -4904,7 +4904,7 @@
    "verbose": "it is twelve minutes past ten oclock in the morning",
    "lengthy": "it is twelve past ten in the morning",
    "short": "it is almost quarter past ten am",
-   "terse": "its after ten"
+   "terse": "its a bit after ten"
   },
   {
    "h": 10,
@@ -4912,7 +4912,7 @@
    "verbose": "it is thirteen minutes past ten oclock in the morning",
    "lengthy": "it is thirteen past ten in the morning",
    "short": "it is almost quarter past ten am",
-   "terse": "its after ten"
+   "terse": "its a bit after ten"
   },
   {
    "h": 10,
@@ -4920,7 +4920,7 @@
    "verbose": "it is fourteen minutes past ten oclock in the morning",
    "lengthy": "it is fourteen past ten in the morning",
    "short": "it is just about quarter past ten am",
-   "terse": "its after ten"
+   "terse": "its a bit after ten"
   },
   {
    "h": 10,
@@ -5336,7 +5336,7 @@
    "verbose": "it is six minutes after eleven oclock in the morning",
    "lengthy": "it is six after eleven in the morning",
    "short": "it is almost ten past eleven am",
-   "terse": "its after eleven"
+   "terse": "its a bit after eleven"
   },
   {
    "h": 11,
@@ -5344,7 +5344,7 @@
    "verbose": "it is seven minutes after eleven oclock in the morning",
    "lengthy": "it is seven after eleven in the morning",
    "short": "it is almost ten past eleven am",
-   "terse": "its after eleven"
+   "terse": "its a bit after eleven"
   },
   {
    "h": 11,
@@ -5352,7 +5352,7 @@
    "verbose": "it is eight minutes after eleven oclock in the morning",
    "lengthy": "it is eight after eleven in the morning",
    "short": "it is almost ten past eleven am",
-   "terse": "its after eleven"
+   "terse": "its a bit after eleven"
   },
   {
    "h": 11,
@@ -5360,7 +5360,7 @@
    "verbose": "it is nine minutes after eleven oclock in the morning",
    "lengthy": "it is nine after eleven in the morning",
    "short": "it is just about ten past eleven am",
-   "terse": "its after eleven"
+   "terse": "its a bit after eleven"
   },
   {
    "h": 11,
@@ -5368,7 +5368,7 @@
    "verbose": "it is ten minutes after eleven oclock in the morning",
    "lengthy": "it is ten after eleven in the morning",
    "short": "it is ten past eleven am",
-   "terse": "its after eleven"
+   "terse": "its a bit after eleven"
   },
   {
    "h": 11,
@@ -5376,7 +5376,7 @@
    "verbose": "it is eleven minutes past eleven oclock in the morning",
    "lengthy": "it is eleven past eleven in the morning",
    "short": "it is almost quarter past eleven am",
-   "terse": "its after eleven"
+   "terse": "its a bit after eleven"
   },
   {
    "h": 11,
@@ -5384,7 +5384,7 @@
    "verbose": "it is twelve minutes past eleven oclock in the morning",
    "lengthy": "it is twelve past eleven in the morning",
    "short": "it is almost quarter past eleven am",
-   "terse": "its after eleven"
+   "terse": "its a bit after eleven"
   },
   {
    "h": 11,
@@ -5392,7 +5392,7 @@
    "verbose": "it is thirteen minutes past eleven oclock in the morning",
    "lengthy": "it is thirteen past eleven in the morning",
    "short": "it is almost quarter past eleven am",
-   "terse": "its after eleven"
+   "terse": "its a bit after eleven"
   },
   {
    "h": 11,
@@ -5400,7 +5400,7 @@
    "verbose": "it is fourteen minutes past eleven oclock in the morning",
    "lengthy": "it is fourteen past eleven in the morning",
    "short": "it is just about quarter past eleven am",
-   "terse": "its after eleven"
+   "terse": "its a bit after eleven"
   },
   {
    "h": 11,
@@ -5816,7 +5816,7 @@
    "verbose": "it is six minutes after noon",
    "lengthy": "it is six after noon",
    "short": "it is almost ten past noon",
-   "terse": "its after noon"
+   "terse": "its a bit after noon"
   },
   {
    "h": 12,
@@ -5824,7 +5824,7 @@
    "verbose": "it is seven minutes after noon",
    "lengthy": "it is seven after noon",
    "short": "it is almost ten past noon",
-   "terse": "its after noon"
+   "terse": "its a bit after noon"
   },
   {
    "h": 12,
@@ -5832,7 +5832,7 @@
    "verbose": "it is eight minutes after noon",
    "lengthy": "it is eight after noon",
    "short": "it is almost ten past noon",
-   "terse": "its after noon"
+   "terse": "its a bit after noon"
   },
   {
    "h": 12,
@@ -5840,7 +5840,7 @@
    "verbose": "it is nine minutes after noon",
    "lengthy": "it is nine after noon",
    "short": "it is just about ten past noon",
-   "terse": "its after noon"
+   "terse": "its a bit after noon"
   },
   {
    "h": 12,
@@ -5848,7 +5848,7 @@
    "verbose": "it is ten minutes after noon",
    "lengthy": "it is ten after noon",
    "short": "it is ten past noon",
-   "terse": "its after noon"
+   "terse": "its a bit after noon"
   },
   {
    "h": 12,
@@ -5856,7 +5856,7 @@
    "verbose": "it is eleven minutes past noon",
    "lengthy": "it is eleven past noon",
    "short": "it is almost quarter past noon",
-   "terse": "its after noon"
+   "terse": "its a bit after noon"
   },
   {
    "h": 12,
@@ -5864,7 +5864,7 @@
    "verbose": "it is twelve minutes past noon",
    "lengthy": "it is twelve past noon",
    "short": "it is almost quarter past noon",
-   "terse": "its after noon"
+   "terse": "its a bit after noon"
   },
   {
    "h": 12,
@@ -5872,7 +5872,7 @@
    "verbose": "it is thirteen minutes past noon",
    "lengthy": "it is thirteen past noon",
    "short": "it is almost quarter past noon",
-   "terse": "its after noon"
+   "terse": "its a bit after noon"
   },
   {
    "h": 12,
@@ -5880,7 +5880,7 @@
    "verbose": "it is fourteen minutes past noon",
    "lengthy": "it is fourteen past noon",
    "short": "it is just about quarter past noon",
-   "terse": "its after noon"
+   "terse": "its a bit after noon"
   },
   {
    "h": 12,
@@ -6296,7 +6296,7 @@
    "verbose": "it is six minutes after one oclock in the afternoon",
    "lengthy": "it is six after one in the afternoon",
    "short": "it is almost ten past one pm",
-   "terse": "its after one"
+   "terse": "its a bit after one"
   },
   {
    "h": 13,
@@ -6304,7 +6304,7 @@
    "verbose": "it is seven minutes after one oclock in the afternoon",
    "lengthy": "it is seven after one in the afternoon",
    "short": "it is almost ten past one pm",
-   "terse": "its after one"
+   "terse": "its a bit after one"
   },
   {
    "h": 13,
@@ -6312,7 +6312,7 @@
    "verbose": "it is eight minutes after one oclock in the afternoon",
    "lengthy": "it is eight after one in the afternoon",
    "short": "it is almost ten past one pm",
-   "terse": "its after one"
+   "terse": "its a bit after one"
   },
   {
    "h": 13,
@@ -6320,7 +6320,7 @@
    "verbose": "it is nine minutes after one oclock in the afternoon",
    "lengthy": "it is nine after one in the afternoon",
    "short": "it is just about ten past one pm",
-   "terse": "its after one"
+   "terse": "its a bit after one"
   },
   {
    "h": 13,
@@ -6328,7 +6328,7 @@
    "verbose": "it is ten minutes after one oclock in the afternoon",
    "lengthy": "it is ten after one in the afternoon",
    "short": "it is ten past one pm",
-   "terse": "its after one"
+   "terse": "its a bit after one"
   },
   {
    "h": 13,
@@ -6336,7 +6336,7 @@
    "verbose": "it is eleven minutes past one oclock in the afternoon",
    "lengthy": "it is eleven past one in the afternoon",
    "short": "it is almost quarter past one pm",
-   "terse": "its after one"
+   "terse": "its a bit after one"
   },
   {
    "h": 13,
@@ -6344,7 +6344,7 @@
    "verbose": "it is twelve minutes past one oclock in the afternoon",
    "lengthy": "it is twelve past one in the afternoon",
    "short": "it is almost quarter past one pm",
-   "terse": "its after one"
+   "terse": "its a bit after one"
   },
   {
    "h": 13,
@@ -6352,7 +6352,7 @@
    "verbose": "it is thirteen minutes past one oclock in the afternoon",
    "lengthy": "it is thirteen past one in the afternoon",
    "short": "it is almost quarter past one pm",
-   "terse": "its after one"
+   "terse": "its a bit after one"
   },
   {
    "h": 13,
@@ -6360,7 +6360,7 @@
    "verbose": "it is fourteen minutes past one oclock in the afternoon",
    "lengthy": "it is fourteen past one in the afternoon",
    "short": "it is just about quarter past one pm",
-   "terse": "its after one"
+   "terse": "its a bit after one"
   },
   {
    "h": 13,
@@ -6776,7 +6776,7 @@
    "verbose": "it is six minutes after two oclock in the afternoon",
    "lengthy": "it is six after two in the afternoon",
    "short": "it is almost ten past two pm",
-   "terse": "its after two"
+   "terse": "its a bit after two"
   },
   {
    "h": 14,
@@ -6784,7 +6784,7 @@
    "verbose": "it is seven minutes after two oclock in the afternoon",
    "lengthy": "it is seven after two in the afternoon",
    "short": "it is almost ten past two pm",
-   "terse": "its after two"
+   "terse": "its a bit after two"
   },
   {
    "h": 14,
@@ -6792,7 +6792,7 @@
    "verbose": "it is eight minutes after two oclock in the afternoon",
    "lengthy": "it is eight after two in the afternoon",
    "short": "it is almost ten past two pm",
-   "terse": "its after two"
+   "terse": "its a bit after two"
   },
   {
    "h": 14,
@@ -6800,7 +6800,7 @@
    "verbose": "it is nine minutes after two oclock in the afternoon",
    "lengthy": "it is nine after two in the afternoon",
    "short": "it is just about ten past two pm",
-   "terse": "its after two"
+   "terse": "its a bit after two"
   },
   {
    "h": 14,
@@ -6808,7 +6808,7 @@
    "verbose": "it is ten minutes after two oclock in the afternoon",
    "lengthy": "it is ten after two in the afternoon",
    "short": "it is ten past two pm",
-   "terse": "its after two"
+   "terse": "its a bit after two"
   },
   {
    "h": 14,
@@ -6816,7 +6816,7 @@
    "verbose": "it is eleven minutes past two oclock in the afternoon",
    "lengthy": "it is eleven past two in the afternoon",
    "short": "it is almost quarter past two pm",
-   "terse": "its after two"
+   "terse": "its a bit after two"
   },
   {
    "h": 14,
@@ -6824,7 +6824,7 @@
    "verbose": "it is twelve minutes past two oclock in the afternoon",
    "lengthy": "it is twelve past two in the afternoon",
    "short": "it is almost quarter past two pm",
-   "terse": "its after two"
+   "terse": "its a bit after two"
   },
   {
    "h": 14,
@@ -6832,7 +6832,7 @@
    "verbose": "it is thirteen minutes past two oclock in the afternoon",
    "lengthy": "it is thirteen past two in the afternoon",
    "short": "it is almost quarter past two pm",
-   "terse": "its after two"
+   "terse": "its a bit after two"
   },
   {
    "h": 14,
@@ -6840,7 +6840,7 @@
    "verbose": "it is fourteen minutes past two oclock in the afternoon",
    "lengthy": "it is fourteen past two in the afternoon",
    "short": "it is just about quarter past two pm",
-   "terse": "its after two"
+   "terse": "its a bit after two"
   },
   {
    "h": 14,
@@ -7256,7 +7256,7 @@
    "verbose": "it is six minutes after three oclock in the afternoon",
    "lengthy": "it is six after three in the afternoon",
    "short": "it is almost ten past three pm",
-   "terse": "its after three"
+   "terse": "its a bit after three"
   },
   {
    "h": 15,
@@ -7264,7 +7264,7 @@
    "verbose": "it is seven minutes after three oclock in the afternoon",
    "lengthy": "it is seven after three in the afternoon",
    "short": "it is almost ten past three pm",
-   "terse": "its after three"
+   "terse": "its a bit after three"
   },
   {
    "h": 15,
@@ -7272,7 +7272,7 @@
    "verbose": "it is eight minutes after three oclock in the afternoon",
    "lengthy": "it is eight after three in the afternoon",
    "short": "it is almost ten past three pm",
-   "terse": "its after three"
+   "terse": "its a bit after three"
   },
   {
    "h": 15,
@@ -7280,7 +7280,7 @@
    "verbose": "it is nine minutes after three oclock in the afternoon",
    "lengthy": "it is nine after three in the afternoon",
    "short": "it is just about ten past three pm",
-   "terse": "its after three"
+   "terse": "its a bit after three"
   },
   {
    "h": 15,
@@ -7288,7 +7288,7 @@
    "verbose": "it is ten minutes after three oclock in the afternoon",
    "lengthy": "it is ten after three in the afternoon",
    "short": "it is ten past three pm",
-   "terse": "its after three"
+   "terse": "its a bit after three"
   },
   {
    "h": 15,
@@ -7296,7 +7296,7 @@
    "verbose": "it is eleven minutes past three oclock in the afternoon",
    "lengthy": "it is eleven past three in the afternoon",
    "short": "it is almost quarter past three pm",
-   "terse": "its after three"
+   "terse": "its a bit after three"
   },
   {
    "h": 15,
@@ -7304,7 +7304,7 @@
    "verbose": "it is twelve minutes past three oclock in the afternoon",
    "lengthy": "it is twelve past three in the afternoon",
    "short": "it is almost quarter past three pm",
-   "terse": "its after three"
+   "terse": "its a bit after three"
   },
   {
    "h": 15,
@@ -7312,7 +7312,7 @@
    "verbose": "it is thirteen minutes past three oclock in the afternoon",
    "lengthy": "it is thirteen past three in the afternoon",
    "short": "it is almost quarter past three pm",
-   "terse": "its after three"
+   "terse": "its a bit after three"
   },
   {
    "h": 15,
@@ -7320,7 +7320,7 @@
    "verbose": "it is fourteen minutes past three oclock in the afternoon",
    "lengthy": "it is fourteen past three in the afternoon",
    "short": "it is just about quarter past three pm",
-   "terse": "its after three"
+   "terse": "its a bit after three"
   },
   {
    "h": 15,
@@ -7736,7 +7736,7 @@
    "verbose": "it is six minutes after four oclock in the afternoon",
    "lengthy": "it is six after four in the afternoon",
    "short": "it is almost ten past four pm",
-   "terse": "its after four"
+   "terse": "its a bit after four"
   },
   {
    "h": 16,
@@ -7744,7 +7744,7 @@
    "verbose": "it is seven minutes after four oclock in the afternoon",
    "lengthy": "it is seven after four in the afternoon",
    "short": "it is almost ten past four pm",
-   "terse": "its after four"
+   "terse": "its a bit after four"
   },
   {
    "h": 16,
@@ -7752,7 +7752,7 @@
    "verbose": "it is eight minutes after four oclock in the afternoon",
    "lengthy": "it is eight after four in the afternoon",
    "short": "it is almost ten past four pm",
-   "terse": "its after four"
+   "terse": "its a bit after four"
   },
   {
    "h": 16,
@@ -7760,7 +7760,7 @@
    "verbose": "it is nine minutes after four oclock in the afternoon",
    "lengthy": "it is nine after four in the afternoon",
    "short": "it is just about ten past four pm",
-   "terse": "its after four"
+   "terse": "its a bit after four"
   },
   {
    "h": 16,
@@ -7768,7 +7768,7 @@
    "verbose": "it is ten minutes after four oclock in the afternoon",
    "lengthy": "it is ten after four in the afternoon",
    "short": "it is ten past four pm",
-   "terse": "its after four"
+   "terse": "its a bit after four"
   },
   {
    "h": 16,
@@ -7776,7 +7776,7 @@
    "verbose": "it is eleven minutes past four oclock in the afternoon",
    "lengthy": "it is eleven past four in the afternoon",
    "short": "it is almost quarter past four pm",
-   "terse": "its after four"
+   "terse": "its a bit after four"
   },
   {
    "h": 16,
@@ -7784,7 +7784,7 @@
    "verbose": "it is twelve minutes past four oclock in the afternoon",
    "lengthy": "it is twelve past four in the afternoon",
    "short": "it is almost quarter past four pm",
-   "terse": "its after four"
+   "terse": "its a bit after four"
   },
   {
    "h": 16,
@@ -7792,7 +7792,7 @@
    "verbose": "it is thirteen minutes past four oclock in the afternoon",
    "lengthy": "it is thirteen past four in the afternoon",
    "short": "it is almost quarter past four pm",
-   "terse": "its after four"
+   "terse": "its a bit after four"
   },
   {
    "h": 16,
@@ -7800,7 +7800,7 @@
    "verbose": "it is fourteen minutes past four oclock in the afternoon",
    "lengthy": "it is fourteen past four in the afternoon",
    "short": "it is just about quarter past four pm",
-   "terse": "its after four"
+   "terse": "its a bit after four"
   },
   {
    "h": 16,
@@ -8216,7 +8216,7 @@
    "verbose": "it is six minutes after five oclock in the evening",
    "lengthy": "it is six after five in the evening",
    "short": "it is almost ten past five pm",
-   "terse": "its after five"
+   "terse": "its a bit after five"
   },
   {
    "h": 17,
@@ -8224,7 +8224,7 @@
    "verbose": "it is seven minutes after five oclock in the evening",
    "lengthy": "it is seven after five in the evening",
    "short": "it is almost ten past five pm",
-   "terse": "its after five"
+   "terse": "its a bit after five"
   },
   {
    "h": 17,
@@ -8232,7 +8232,7 @@
    "verbose": "it is eight minutes after five oclock in the evening",
    "lengthy": "it is eight after five in the evening",
    "short": "it is almost ten past five pm",
-   "terse": "its after five"
+   "terse": "its a bit after five"
   },
   {
    "h": 17,
@@ -8240,7 +8240,7 @@
    "verbose": "it is nine minutes after five oclock in the evening",
    "lengthy": "it is nine after five in the evening",
    "short": "it is just about ten past five pm",
-   "terse": "its after five"
+   "terse": "its a bit after five"
   },
   {
    "h": 17,
@@ -8248,7 +8248,7 @@
    "verbose": "it is ten minutes after five oclock in the evening",
    "lengthy": "it is ten after five in the evening",
    "short": "it is ten past five pm",
-   "terse": "its after five"
+   "terse": "its a bit after five"
   },
   {
    "h": 17,
@@ -8256,7 +8256,7 @@
    "verbose": "it is eleven minutes past five oclock in the evening",
    "lengthy": "it is eleven past five in the evening",
    "short": "it is almost quarter past five pm",
-   "terse": "its after five"
+   "terse": "its a bit after five"
   },
   {
    "h": 17,
@@ -8264,7 +8264,7 @@
    "verbose": "it is twelve minutes past five oclock in the evening",
    "lengthy": "it is twelve past five in the evening",
    "short": "it is almost quarter past five pm",
-   "terse": "its after five"
+   "terse": "its a bit after five"
   },
   {
    "h": 17,
@@ -8272,7 +8272,7 @@
    "verbose": "it is thirteen minutes past five oclock in the evening",
    "lengthy": "it is thirteen past five in the evening",
    "short": "it is almost quarter past five pm",
-   "terse": "its after five"
+   "terse": "its a bit after five"
   },
   {
    "h": 17,
@@ -8280,7 +8280,7 @@
    "verbose": "it is fourteen minutes past five oclock in the evening",
    "lengthy": "it is fourteen past five in the evening",
    "short": "it is just about quarter past five pm",
-   "terse": "its after five"
+   "terse": "its a bit after five"
   },
   {
    "h": 17,
@@ -8696,7 +8696,7 @@
    "verbose": "it is six minutes after six oclock in the evening",
    "lengthy": "it is six after six in the evening",
    "short": "it is almost ten past six pm",
-   "terse": "its after six"
+   "terse": "its a bit after six"
   },
   {
    "h": 18,
@@ -8704,7 +8704,7 @@
    "verbose": "it is seven minutes after six oclock in the evening",
    "lengthy": "it is seven after six in the evening",
    "short": "it is almost ten past six pm",
-   "terse": "its after six"
+   "terse": "its a bit after six"
   },
   {
    "h": 18,
@@ -8712,7 +8712,7 @@
    "verbose": "it is eight minutes after six oclock in the evening",
    "lengthy": "it is eight after six in the evening",
    "short": "it is almost ten past six pm",
-   "terse": "its after six"
+   "terse": "its a bit after six"
   },
   {
    "h": 18,
@@ -8720,7 +8720,7 @@
    "verbose": "it is nine minutes after six oclock in the evening",
    "lengthy": "it is nine after six in the evening",
    "short": "it is just about ten past six pm",
-   "terse": "its after six"
+   "terse": "its a bit after six"
   },
   {
    "h": 18,
@@ -8728,7 +8728,7 @@
    "verbose": "it is ten minutes after six oclock in the evening",
    "lengthy": "it is ten after six in the evening",
    "short": "it is ten past six pm",
-   "terse": "its after six"
+   "terse": "its a bit after six"
   },
   {
    "h": 18,
@@ -8736,7 +8736,7 @@
    "verbose": "it is eleven minutes past six oclock in the evening",
    "lengthy": "it is eleven past six in the evening",
    "short": "it is almost quarter past six pm",
-   "terse": "its after six"
+   "terse": "its a bit after six"
   },
   {
    "h": 18,
@@ -8744,7 +8744,7 @@
    "verbose": "it is twelve minutes past six oclock in the evening",
    "lengthy": "it is twelve past six in the evening",
    "short": "it is almost quarter past six pm",
-   "terse": "its after six"
+   "terse": "its a bit after six"
   },
   {
    "h": 18,
@@ -8752,7 +8752,7 @@
    "verbose": "it is thirteen minutes past six oclock in the evening",
    "lengthy": "it is thirteen past six in the evening",
    "short": "it is almost quarter past six pm",
-   "terse": "its after six"
+   "terse": "its a bit after six"
   },
   {
    "h": 18,
@@ -8760,7 +8760,7 @@
    "verbose": "it is fourteen minutes past six oclock in the evening",
    "lengthy": "it is fourteen past six in the evening",
    "short": "it is just about quarter past six pm",
-   "terse": "its after six"
+   "terse": "its a bit after six"
   },
   {
    "h": 18,
@@ -9176,7 +9176,7 @@
    "verbose": "it is six minutes after seven oclock in the evening",
    "lengthy": "it is six after seven in the evening",
    "short": "it is almost ten past seven pm",
-   "terse": "its after seven"
+   "terse": "its a bit after seven"
   },
   {
    "h": 19,
@@ -9184,7 +9184,7 @@
    "verbose": "it is seven minutes after seven oclock in the evening",
    "lengthy": "it is seven after seven in the evening",
    "short": "it is almost ten past seven pm",
-   "terse": "its after seven"
+   "terse": "its a bit after seven"
   },
   {
    "h": 19,
@@ -9192,7 +9192,7 @@
    "verbose": "it is eight minutes after seven oclock in the evening",
    "lengthy": "it is eight after seven in the evening",
    "short": "it is almost ten past seven pm",
-   "terse": "its after seven"
+   "terse": "its a bit after seven"
   },
   {
    "h": 19,
@@ -9200,7 +9200,7 @@
    "verbose": "it is nine minutes after seven oclock in the evening",
    "lengthy": "it is nine after seven in the evening",
    "short": "it is just about ten past seven pm",
-   "terse": "its after seven"
+   "terse": "its a bit after seven"
   },
   {
    "h": 19,
@@ -9208,7 +9208,7 @@
    "verbose": "it is ten minutes after seven oclock in the evening",
    "lengthy": "it is ten after seven in the evening",
    "short": "it is ten past seven pm",
-   "terse": "its after seven"
+   "terse": "its a bit after seven"
   },
   {
    "h": 19,
@@ -9216,7 +9216,7 @@
    "verbose": "it is eleven minutes past seven oclock in the evening",
    "lengthy": "it is eleven past seven in the evening",
    "short": "it is almost quarter past seven pm",
-   "terse": "its after seven"
+   "terse": "its a bit after seven"
   },
   {
    "h": 19,
@@ -9224,7 +9224,7 @@
    "verbose": "it is twelve minutes past seven oclock in the evening",
    "lengthy": "it is twelve past seven in the evening",
    "short": "it is almost quarter past seven pm",
-   "terse": "its after seven"
+   "terse": "its a bit after seven"
   },
   {
    "h": 19,
@@ -9232,7 +9232,7 @@
    "verbose": "it is thirteen minutes past seven oclock in the evening",
    "lengthy": "it is thirteen past seven in the evening",
    "short": "it is almost quarter past seven pm",
-   "terse": "its after seven"
+   "terse": "its a bit after seven"
   },
   {
    "h": 19,
@@ -9240,7 +9240,7 @@
    "verbose": "it is fourteen minutes past seven oclock in the evening",
    "lengthy": "it is fourteen past seven in the evening",
    "short": "it is just about quarter past seven pm",
-   "terse": "its after seven"
+   "terse": "its a bit after seven"
   },
   {
    "h": 19,
@@ -9656,7 +9656,7 @@
    "verbose": "it is six minutes after eight oclock in the evening",
    "lengthy": "it is six after eight in the evening",
    "short": "it is almost ten past eight pm",
-   "terse": "its after eight"
+   "terse": "its a bit after eight"
   },
   {
    "h": 20,
@@ -9664,7 +9664,7 @@
    "verbose": "it is seven minutes after eight oclock in the evening",
    "lengthy": "it is seven after eight in the evening",
    "short": "it is almost ten past eight pm",
-   "terse": "its after eight"
+   "terse": "its a bit after eight"
   },
   {
    "h": 20,
@@ -9672,7 +9672,7 @@
    "verbose": "it is eight minutes after eight oclock in the evening",
    "lengthy": "it is eight after eight in the evening",
    "short": "it is almost ten past eight pm",
-   "terse": "its after eight"
+   "terse": "its a bit after eight"
   },
   {
    "h": 20,
@@ -9680,7 +9680,7 @@
    "verbose": "it is nine minutes after eight oclock in the evening",
    "lengthy": "it is nine after eight in the evening",
    "short": "it is just about ten past eight pm",
-   "terse": "its after eight"
+   "terse": "its a bit after eight"
   },
   {
    "h": 20,
@@ -9688,7 +9688,7 @@
    "verbose": "it is ten minutes after eight oclock in the evening",
    "lengthy": "it is ten after eight in the evening",
    "short": "it is ten past eight pm",
-   "terse": "its after eight"
+   "terse": "its a bit after eight"
   },
   {
    "h": 20,
@@ -9696,7 +9696,7 @@
    "verbose": "it is eleven minutes past eight oclock in the evening",
    "lengthy": "it is eleven past eight in the evening",
    "short": "it is almost quarter past eight pm",
-   "terse": "its after eight"
+   "terse": "its a bit after eight"
   },
   {
    "h": 20,
@@ -9704,7 +9704,7 @@
    "verbose": "it is twelve minutes past eight oclock in the evening",
    "lengthy": "it is twelve past eight in the evening",
    "short": "it is almost quarter past eight pm",
-   "terse": "its after eight"
+   "terse": "its a bit after eight"
   },
   {
    "h": 20,
@@ -9712,7 +9712,7 @@
    "verbose": "it is thirteen minutes past eight oclock in the evening",
    "lengthy": "it is thirteen past eight in the evening",
    "short": "it is almost quarter past eight pm",
-   "terse": "its after eight"
+   "terse": "its a bit after eight"
   },
   {
    "h": 20,
@@ -9720,7 +9720,7 @@
    "verbose": "it is fourteen minutes past eight oclock in the evening",
    "lengthy": "it is fourteen past eight in the evening",
    "short": "it is just about quarter past eight pm",
-   "terse": "its after eight"
+   "terse": "its a bit after eight"
   },
   {
    "h": 20,
@@ -10136,7 +10136,7 @@
    "verbose": "it is six minutes after nine oclock in the evening",
    "lengthy": "it is six after nine in the evening",
    "short": "it is almost ten past nine pm",
-   "terse": "its after nine"
+   "terse": "its a bit after nine"
   },
   {
    "h": 21,
@@ -10144,7 +10144,7 @@
    "verbose": "it is seven minutes after nine oclock in the evening",
    "lengthy": "it is seven after nine in the evening",
    "short": "it is almost ten past nine pm",
-   "terse": "its after nine"
+   "terse": "its a bit after nine"
   },
   {
    "h": 21,
@@ -10152,7 +10152,7 @@
    "verbose": "it is eight minutes after nine oclock in the evening",
    "lengthy": "it is eight after nine in the evening",
    "short": "it is almost ten past nine pm",
-   "terse": "its after nine"
+   "terse": "its a bit after nine"
   },
   {
    "h": 21,
@@ -10160,7 +10160,7 @@
    "verbose": "it is nine minutes after nine oclock in the evening",
    "lengthy": "it is nine after nine in the evening",
    "short": "it is just about ten past nine pm",
-   "terse": "its after nine"
+   "terse": "its a bit after nine"
   },
   {
    "h": 21,
@@ -10168,7 +10168,7 @@
    "verbose": "it is ten minutes after nine oclock in the evening",
    "lengthy": "it is ten after nine in the evening",
    "short": "it is ten past nine pm",
-   "terse": "its after nine"
+   "terse": "its a bit after nine"
   },
   {
    "h": 21,
@@ -10176,7 +10176,7 @@
    "verbose": "it is eleven minutes past nine oclock in the evening",
    "lengthy": "it is eleven past nine in the evening",
    "short": "it is almost quarter past nine pm",
-   "terse": "its after nine"
+   "terse": "its a bit after nine"
   },
   {
    "h": 21,
@@ -10184,7 +10184,7 @@
    "verbose": "it is twelve minutes past nine oclock in the evening",
    "lengthy": "it is twelve past nine in the evening",
    "short": "it is almost quarter past nine pm",
-   "terse": "its after nine"
+   "terse": "its a bit after nine"
   },
   {
    "h": 21,
@@ -10192,7 +10192,7 @@
    "verbose": "it is thirteen minutes past nine oclock in the evening",
    "lengthy": "it is thirteen past nine in the evening",
    "short": "it is almost quarter past nine pm",
-   "terse": "its after nine"
+   "terse": "its a bit after nine"
   },
   {
    "h": 21,
@@ -10200,7 +10200,7 @@
    "verbose": "it is fourteen minutes past nine oclock in the evening",
    "lengthy": "it is fourteen past nine in the evening",
    "short": "it is just about quarter past nine pm",
-   "terse": "its after nine"
+   "terse": "its a bit after nine"
   },
   {
    "h": 21,
@@ -10616,7 +10616,7 @@
    "verbose": "it is six minutes after ten oclock in the evening",
    "lengthy": "it is six after ten in the evening",
    "short": "it is almost ten past ten pm",
-   "terse": "its after ten"
+   "terse": "its a bit after ten"
   },
   {
    "h": 22,
@@ -10624,7 +10624,7 @@
    "verbose": "it is seven minutes after ten oclock in the evening",
    "lengthy": "it is seven after ten in the evening",
    "short": "it is almost ten past ten pm",
-   "terse": "its after ten"
+   "terse": "its a bit after ten"
   },
   {
    "h": 22,
@@ -10632,7 +10632,7 @@
    "verbose": "it is eight minutes after ten oclock in the evening",
    "lengthy": "it is eight after ten in the evening",
    "short": "it is almost ten past ten pm",
-   "terse": "its after ten"
+   "terse": "its a bit after ten"
   },
   {
    "h": 22,
@@ -10640,7 +10640,7 @@
    "verbose": "it is nine minutes after ten oclock in the evening",
    "lengthy": "it is nine after ten in the evening",
    "short": "it is just about ten past ten pm",
-   "terse": "its after ten"
+   "terse": "its a bit after ten"
   },
   {
    "h": 22,
@@ -10648,7 +10648,7 @@
    "verbose": "it is ten minutes after ten oclock in the evening",
    "lengthy": "it is ten after ten in the evening",
    "short": "it is ten past ten pm",
-   "terse": "its after ten"
+   "terse": "its a bit after ten"
   },
   {
    "h": 22,
@@ -10656,7 +10656,7 @@
    "verbose": "it is eleven minutes past ten oclock in the evening",
    "lengthy": "it is eleven past ten in the evening",
    "short": "it is almost quarter past ten pm",
-   "terse": "its after ten"
+   "terse": "its a bit after ten"
   },
   {
    "h": 22,
@@ -10664,7 +10664,7 @@
    "verbose": "it is twelve minutes past ten oclock in the evening",
    "lengthy": "it is twelve past ten in the evening",
    "short": "it is almost quarter past ten pm",
-   "terse": "its after ten"
+   "terse": "its a bit after ten"
   },
   {
    "h": 22,
@@ -10672,7 +10672,7 @@
    "verbose": "it is thirteen minutes past ten oclock in the evening",
    "lengthy": "it is thirteen past ten in the evening",
    "short": "it is almost quarter past ten pm",
-   "terse": "its after ten"
+   "terse": "its a bit after ten"
   },
   {
    "h": 22,
@@ -10680,7 +10680,7 @@
    "verbose": "it is fourteen minutes past ten oclock in the evening",
    "lengthy": "it is fourteen past ten in the evening",
    "short": "it is just about quarter past ten pm",
-   "terse": "its after ten"
+   "terse": "its a bit after ten"
   },
   {
    "h": 22,
@@ -11096,7 +11096,7 @@
    "verbose": "it is six minutes after eleven oclock in the evening",
    "lengthy": "it is six after eleven in the evening",
    "short": "it is almost ten past eleven pm",
-   "terse": "its after eleven"
+   "terse": "its a bit after eleven"
   },
   {
    "h": 23,
@@ -11104,7 +11104,7 @@
    "verbose": "it is seven minutes after eleven oclock in the evening",
    "lengthy": "it is seven after eleven in the evening",
    "short": "it is almost ten past eleven pm",
-   "terse": "its after eleven"
+   "terse": "its a bit after eleven"
   },
   {
    "h": 23,
@@ -11112,7 +11112,7 @@
    "verbose": "it is eight minutes after eleven oclock in the evening",
    "lengthy": "it is eight after eleven in the evening",
    "short": "it is almost ten past eleven pm",
-   "terse": "its after eleven"
+   "terse": "its a bit after eleven"
   },
   {
    "h": 23,
@@ -11120,7 +11120,7 @@
    "verbose": "it is nine minutes after eleven oclock in the evening",
    "lengthy": "it is nine after eleven in the evening",
    "short": "it is just about ten past eleven pm",
-   "terse": "its after eleven"
+   "terse": "its a bit after eleven"
   },
   {
    "h": 23,
@@ -11128,7 +11128,7 @@
    "verbose": "it is ten minutes after eleven oclock in the evening",
    "lengthy": "it is ten after eleven in the evening",
    "short": "it is ten past eleven pm",
-   "terse": "its after eleven"
+   "terse": "its a bit after eleven"
   },
   {
    "h": 23,
@@ -11136,7 +11136,7 @@
    "verbose": "it is eleven minutes past eleven oclock in the evening",
    "lengthy": "it is eleven past eleven in the evening",
    "short": "it is almost quarter past eleven pm",
-   "terse": "its after eleven"
+   "terse": "its a bit after eleven"
   },
   {
    "h": 23,
@@ -11144,7 +11144,7 @@
    "verbose": "it is twelve minutes past eleven oclock in the evening",
    "lengthy": "it is twelve past eleven in the evening",
    "short": "it is almost quarter past eleven pm",
-   "terse": "its after eleven"
+   "terse": "its a bit after eleven"
   },
   {
    "h": 23,
@@ -11152,7 +11152,7 @@
    "verbose": "it is thirteen minutes past eleven oclock in the evening",
    "lengthy": "it is thirteen past eleven in the evening",
    "short": "it is almost quarter past eleven pm",
-   "terse": "its after eleven"
+   "terse": "its a bit after eleven"
   },
   {
    "h": 23,
@@ -11160,7 +11160,7 @@
    "verbose": "it is fourteen minutes past eleven oclock in the evening",
    "lengthy": "it is fourteen past eleven in the evening",
    "short": "it is just about quarter past eleven pm",
-   "terse": "its after eleven"
+   "terse": "its a bit after eleven"
   },
   {
    "h": 23,

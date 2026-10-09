@@ -94,14 +94,15 @@ const SHORT_BANDS = [
 ];
 
 // Six wide bands. Terse keeps 'quarter after' where the other levels say 'quarter past'.
+// ':06'-':14' is 'a bit after', not a bare 'after': the date+time joiner is 'at', and 'at after three' reads wrong.
 const TERSE_BANDS = [
-  band( 0, null,         null,      null,    'this'),
-  band( 5, 'just after', null,      null,    'this'),
-  band(14, 'after',      null,      null,    'this'),
-  band(24, null,         'quarter', 'after', 'this'),
-  band(39, null,         'half',    'past',  'this'),
-  band(49, null,         'quarter', 'to',    'next'),
-  band(59, 'almost',     null,      null,    'next'),
+  band( 0, null,          null,      null,    'this'),
+  band( 5, 'just after',  null,      null,    'this'),
+  band(14, 'a bit after', null,      null,    'this'),
+  band(24, null,          'quarter', 'after', 'this'),
+  band(39, null,          'half',    'past',  'this'),
+  band(49, null,          'quarter', 'to',    'next'),
+  band(59, 'almost',      null,      null,    'next'),
 ];
 
 const BAND_FACES = {
