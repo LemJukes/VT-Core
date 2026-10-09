@@ -41,3 +41,10 @@ describe('input validation', () => {
     assert.throws(() => vt.format(d, { charset: 'ascii' }), /Invalid charset/);
   });
 });
+
+test('a Date from another realm is accepted', async () => {
+  const { runInNewContext } = await import('node:vm');
+  const foreign = runInNewContext('new Date(2026, 0, 1, 9, 5)');
+  assert.ok(!(foreign instanceof Date));
+  assert.equal(vt.terseTime(foreign), 'its just after nine');
+});

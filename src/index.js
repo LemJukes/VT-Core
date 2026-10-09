@@ -25,7 +25,8 @@ export const MAX_LENGTH = Object.freeze({
 const JOINERS = { verbose: ', and it is', lengthy: 'at', short: 'at', terse: 'at' };
 
 function validateDate(date) {
-  if (date === null || !(date instanceof Date)) {
+  // not `instanceof Date`: that rejects Dates created in another realm (iframe, vm)
+  if (Object.prototype.toString.call(date) !== '[object Date]') {
     throw new Error('Input must be a valid Date object');
   }
   if (Number.isNaN(date.getTime())) {
